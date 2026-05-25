@@ -13,3 +13,4 @@ This is an interactive game which gives fun quizzes and more.
 git clone https://github.com/tytylerler1313/Tyty-lerler.git
 cd Tyty-lerler
 python quiz_game.py
+```
