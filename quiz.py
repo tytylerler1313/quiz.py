@@ -8,15 +8,15 @@ print("Tyty-lerler presents")
 
 # Stats
 def stats():
-  Coins = 0
-  Lives = 3
-  Score = 0
+  coins = 0
+  lives = 3
+  score = 0
   in_a_row() = 0
-    if Lives = 0:
+    if lives = 0:
       print(GAME OVER!)
       player:kick(GAME OVER!)
-      print({Coins}
-            {Score})
+      print({coins}
+            {score})
     else:
       print()
 
@@ -65,16 +65,16 @@ if difficulty == "Easy":
   else:
     result = "Wrong! The answer was {correct_answer}."
     in_a_row = 0
-    Coins -= 10
-    Lives -= 1
-    Score += 0
+    coins -= 10
+    lives -= 1
+    score += 0
     print(result)
   except ValueError:
     print("Please enter a number.")
     in_a_row = 0
-    Coins -= 10
-    Lives -= 1
-    Score += 0
+    coins -= 10
+    lives -= 1
+    score += 0
   def in_a_row:
     if in_a_row >= 3:
       Coins * 1.5
