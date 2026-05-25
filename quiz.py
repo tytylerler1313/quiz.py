@@ -31,7 +31,15 @@ def pet_equip(pet_name)
   pet_equip = []
   pet_equip.append(pet_name)(pets)
   print(f"Successful equipped {pet_name}{pets}!")
-  if pet_name
+  if pet_equip(pet_name) = "Tyty-lerler":
+   coins = *1200
+   lives += 2
+    if lives == 0: 
+     lives += 3
+     print("REVIVED!")
+  if pet_equip(pet name) = "Immortal Skeletal Peagusus":
+    coins = *1000
+    
 
 # Get user input
 name = input('What is your name?\n')
@@ -68,10 +76,15 @@ if difficulty == "Easy":
   num2 = random.randint(0, 20)
   question = f"{num1} + {num2} ="
   correct_answer = num1 + num2
+  start_time = time.time()
+  answer(question) = input(f"{num1} + {num2}")
+  end_time = time.time()
+  time_taken = start_time - end_time
+  print("You took {time_taken} seconds!")
 
   # Get user input
-  user_input = input(question)
-  if input(question) == correct_answer:
+  user_input = answer(question)
+  if answer(question) == correct_answer:
     result = "Correct!"
     in_a_row += 1
     print(result)
@@ -82,7 +95,7 @@ if difficulty == "Easy":
     lives -= 1
     score += 0
     print(result)
-  except ValueError:
+  raise ValueError:
     print("Please enter a number.")
     in_a_row = 0
     coins -= 10
