@@ -1,5 +1,6 @@
 ```python
 import random
+import time
 # Tyty-lerler quiz game and more
 print("Tyty-lerler presents")
 
@@ -12,17 +13,25 @@ def stats():
   lives = 3
   score = 0
   in_a_row() = 0
-    if lives = 0:
+    if lives == 0:
       print(GAME OVER!)
-      player:kick(GAME OVER!)
+      exit()
       print({coins}
             {score})
     else:
       print()
 
-# Storage and equip pets
-def storage():
-  storage(pet_name)
+# Pets Storage and equip pets
+def pet_storage(pet_name):
+  pet_storage = []
+  pet_storage.append(pet_name)
+  print(f"({pet_name} was added to your storage!")
+
+def pet_equip(pet_name)
+  pet_equip = []
+  pet_equip.append(pet_name)
+  print(f"Successful equipped {pet_name}!")
+
 # Get user input
 name = input('What is your name?\n')
 
@@ -87,8 +96,6 @@ if difficulty == "Easy":
       Coins * 1
 
 # Pets
-def pet_name():
-  pet_name = (pet_name)
 def pets():
   pets = []
 if difficulty == "Easy":
@@ -97,21 +104,24 @@ if difficulty == "Easy":
   else:
     pets = random.randint(0, 0)
   if pets == 1000000:
-    pets = "Tyty-lerler"
+    pet_name = "Tyty-lerler"
     print("Tyty-lerler pet")
-    storage("Tyty-lerler")
+    pets_storage("Tyty-lerler")
   elif pets == 999999:
     pets = "???"
     pet_name = random.randint(1, 4)
     if pet_name = 1:
-      pets = "Immortal Skeletal Peagusus"
+      pet_name = "Immortal Skeletal Peagusus"
       print("Immortal Skeletal Peagusus")
-      storage("Immortal Skeletal Peagusus")
-    if pets_name = 2:
-      pets = "Voided Knighted Unicorn"
+      pets_storage("Immortal Skeletal Peagusus")
+    if pet_name = 2:
+      pet_name = "Voided Knighted Unicorn"
       print("Voided Knighted Unicorn")
-      storage("Voided Knighted Unicorn")
-    if pets_name =
+      pets_storage("Voided Knighted Unicorn")
+    if pet_name = 3:
+      pet_name = "Hurricane Buddha Raptor"
+      print("Hurricane Buddha Raptor")
+    if pet_name = 4
   elif pets >= 999975:
     pets = "??"
     print("?? pet")
@@ -157,18 +167,6 @@ if difficulty == "Easy":
 
    
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    # Equip pets
-def equip_pets():
-if
   
     
   
