@@ -1,5 +1,4 @@
 ```python
-
 import random
 # Tyty-lerler quiz game and more
 print("Tyty-lerler presents")
