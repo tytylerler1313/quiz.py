@@ -20,6 +20,9 @@ def stats():
     else:
       print()
 
+# Storage and equip pets
+def storage():
+  storage(pet_name)
 # Get user input
 name = input('What is your name?\n')
 
@@ -84,6 +87,8 @@ if difficulty == "Easy":
       Coins * 1
 
 # Pets
+def pet_name():
+  pet_name = (pet_name)
 def pets():
   pets = []
 if difficulty == "Easy":
@@ -97,7 +102,16 @@ if difficulty == "Easy":
     storage("Tyty-lerler")
   elif pets == 999999:
     pets = "???"
-    print("??? pet")
+    pet_name = random.randint(1, 4)
+    if pet_name = 1:
+      pets = "Immortal Skeletal Peagusus"
+      print("Immortal Skeletal Peagusus")
+      storage("Immortal Skeletal Peagusus")
+    if pets_name = 2:
+      pets = "Voided Knighted Unicorn"
+      print("Voided Knighted Unicorn")
+      storage("Voided Knighted Unicorn")
+    if pets_name =
   elif pets >= 999975:
     pets = "??"
     print("?? pet")
@@ -140,6 +154,21 @@ if difficulty == "Easy":
   elif pets = 250000
     pets = "Common"
     print("Common pet")
+
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    # Equip pets
+def equip_pets():
+if
   
     
   
