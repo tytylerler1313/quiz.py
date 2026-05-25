@@ -25,12 +25,13 @@ def stats():
 def pet_storage(pet_name):
   pet_storage = []
   pet_storage.append(pet_name)
-  print(f"({pet_name} was added to your storage!")
+  print(f"{pet_name} was added to your storage!")
 
 def pet_equip(pet_name)
   pet_equip = []
-  pet_equip.append(pet_name)
-  print(f"Successful equipped {pet_name}!")
+  pet_equip.append(pet_name)(pets)
+  print(f"Successful equipped {pet_name}{pets}!")
+  if pet_name
 
 # Get user input
 name = input('What is your name?\n')
@@ -70,7 +71,7 @@ if difficulty == "Easy":
 
   # Get user input
   user_input = input(question)
-  if question == correct_answer:
+  if input(question) == correct_answer:
     result = "Correct!"
     in_a_row += 1
     print(result)
@@ -104,6 +105,7 @@ if difficulty == "Easy":
   else:
     pets = random.randint(0, 0)
   if pets == 1000000:
+    pets = "Tyty-lerler"
     pet_name = "Tyty-lerler"
     print("Tyty-lerler pet")
     pets_storage("Tyty-lerler")
@@ -121,7 +123,11 @@ if difficulty == "Easy":
     if pet_name = 3:
       pet_name = "Hurricane Buddha Raptor"
       print("Hurricane Buddha Raptor")
+      pets_storage("Hurricane Buddha Raptor")
     if pet_name = 4
+      pet_name = "Crimson Awakened Semi-cat"
+      print("Crimson Awakened Semi-cat")
+      pets_storage("Crimson Awaken Semi-cat")
   elif pets >= 999975:
     pets = "??"
     print("?? pet")
@@ -143,25 +149,25 @@ if difficulty == "Easy":
   elif pets >= 998000:
     pets = "Glitch"
     print("Glitch pet")
-  elif pets >= 996000
+  elif pets >= 996000:
     pets = "Secret"
     print("Secret pet")
-  elif pets >= 993500
+  elif pets >= 993500:
     pets = "Futuristic"
     print("Futuristic pet")
-  elif pets >= 980000
+  elif pets >= 980000:
     pets = "Legendary"
     print("Legendary pet")
-  elif pets >= 875000
+  elif pets >= 875000:
     pets = "Epic"
     print("Epic pet")
-  elif pets >= 700000
+  elif pets >= 700000:
     pets = "Rare"
     print("Rare pet")
-  elif pets >= 600000
+  elif pets >= 600000:
     pets = "Uncommon"
     print("Uncommon pet")
-  elif pets = 250000
+  elif pets >= 250000:
     pets = "Common"
     print("Common pet")
 
