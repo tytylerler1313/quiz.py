@@ -16,8 +16,8 @@ print("Tyty-lerler presents")
 def stats():
   global coins
   global lives
-  if lives == 0:
-    print(GAME OVER!)
+  if lives == 0: 
+    print("GAME OVER!")
     exit()
     print({coins}
           {score})
@@ -25,7 +25,7 @@ def stats():
     print()
 
 # Rarities
-  common_pet = [
+common_pet = [
     "Normal Cat",
     "Normal Dog" ,
     "Normal Ant",
@@ -33,7 +33,7 @@ def stats():
     "Normal Mole",
     "Normal Pidgeon"
  ]
-  uncommon_pet = [
+uncommon_pet = [
       "Normal Duck",
       "Normal Elephant",
       "Normal Wolf",
@@ -42,7 +42,7 @@ def stats():
       "Normal Dove",
       "Normal Deer"
  ]
-  rare_pet = [
+rare_pet = [
     "Radiated Buck",
     "Firey Otter",
     "Natural Grizzly",
@@ -56,7 +56,7 @@ def stats():
 
 
 
-pet_equip = None
+
 
 # Pets Storage and equip pets
 pet_inventory = []
@@ -65,7 +65,8 @@ def pet_storage(pet_name):
   print(f"{pet_name} was added to your storage!")
 
 def pet_equip(pet_name):
-  pet_equip.append(pet_name)
+  global pet_equipped
+  pet_equip = pet_name
   print(f"Successful equipped {pet_name}!")
   if pet_equipped == "Tyty-lerler":
     if difficulty == "Easy":
@@ -249,20 +250,20 @@ if difficulty == "Easy":
     pets = "Rare"
     print("Rare pet")
     pet_name = random.choice(rare_pet)
-    return pet_name
     pet_storage(pet_name)
+    return pet_name
   elif pets >= 600000:
     pets = "Uncommon"
     print("Uncommon pet")
     pet_name = random.choice(uncommon_pet)
-    return pet_name
     pet_storage(pet_name)
+    return pet_name
   elif pets >= 250000:
     pets = "Common"
     print("Common pet")
-    common_pet = random.choice(common_pet)                                                                                             
-    return pet_name
+    pet_name = random.choice(common_pet) 
     pet_storage(pet_name)
+    return pet_name
     
 
    
