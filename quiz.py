@@ -33,22 +33,22 @@ def rarity():
     "Normal Mole",
     "Normal Pidgeon"
  ]
-    uncommon_pet = [
-      "Normal Duck"
-      "Normal Elephant"
-      "Normal Wolf"
-      "Normal Giraffe"
-      "Normal Goat"
-      "Normal Dove"
+  uncommon_pet = [
+      "Normal Duck",
+      "Normal Elephant",
+      "Normal Wolf",
+      "Normal Giraffe",
+      "Normal Goat",
+      "Normal Dove",
       "Normal Deer"
  ]
   rare_pet = [
-    "Radiated Buck"
-    "Firey Otter"
-    "Natural Grizzly"
-    "Nocturnal Giraffe"
-    "Normal Dodo"
-    "Flying Fox"
+    "Radiated Buck",
+    "Firey Otter",
+    "Natural Grizzly",
+    "Nocturnal Giraffe",
+    "Normal Dodo",
+    "Flying Fox",
     "Half Quarter Kitten"
  ]
 
