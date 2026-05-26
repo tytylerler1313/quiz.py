@@ -22,16 +22,16 @@ def stats():
     print()
 
 # Pets Storage and equip pets
-pet_storage = []
+pet_inventory = []
 def pet_storage(pet_name):
-  pet_storage.append(pet_name)
+  pet_inventory.append(pet_name)
   print(f"{pet_name} was added to your storage!")
 
 def pet_equip(pet_name):
   pet_equip = []
   pet_equip.append(pet_name)(pets)
   print(f"Successful equipped {pet_name}{pets}!")
-  if pet_equip(pet_name) = "Tyty-lerler":
+  if pet_equipped = "Tyty-lerler":
     if difficulty == "Easy":
       if answer(question) == correct_answer:
         coins *= 1200
@@ -39,7 +39,7 @@ def pet_equip(pet_name):
       if lives == 0: 
         lives += 3
         print("REVIVED!")
-  if pet_equip(pet_name) = "Immortal Skeletal Peagusus":
+  if pet_equipped = "Immortal Skeletal Peagusus":
     if difficulty == "Easy":
       if answer(question) == correct_answer:
         coins *= 1000
@@ -47,7 +47,7 @@ def pet_equip(pet_name):
       if lives == 0:
         lives += 2
         print("REVIVED!")
-  if pet_equip(pet_name) = "Voided Knight Unicorn":
+  if pet_equipped = "Voided Knight Unicorn":
     if difficulty == "Easy":
       if answer(question) == correct_answer:
         coins *= 1000
@@ -213,6 +213,14 @@ if difficulty == "Easy":
       pet_name = "Normal Dog"
       print("Normal Dog")
       pet_storage("Normal Dog")
+    if pet_name == 3:
+      pet_name = "Normal Ant"
+      print("Normal Ant")
+      pet_storage("Normal Ant")
+    if pet_name == 4:
+      pet_Name = "Normal Hamster"
+      print("Normal Hamster")
+      pet_storage("Normal Hamster")
 
    
     
