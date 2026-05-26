@@ -12,7 +12,7 @@ def stats():
   coins = 0
   lives = 3
   score = 0
-  in_a_row() = 0
+  in_a_row = 0
     if lives == 0:
       print(GAME OVER!)
       exit()
@@ -22,26 +22,39 @@ def stats():
       print()
 
 # Pets Storage and equip pets
+pet_storage = []
 def pet_storage(pet_name):
-  pet_storage = []
   pet_storage.append(pet_name)
   print(f"{pet_name} was added to your storage!")
 
-def pet_equip(pet_name)
+def pet_equip(pet_name):
   pet_equip = []
   pet_equip.append(pet_name)(pets)
   print(f"Successful equipped {pet_name}{pets}!")
   if pet_equip(pet_name) = "Tyty-lerler":
-   if difficulty == "Easy":
-     if answer(question) == correct_answer:
-       coins = *1200
-       lives += 2
-     if lives == 0: 
-       lives += 3
-       print("REVIVED!")
-  if pet_equip(pet name) = "Immortal Skeletal Peagusus":
-    coins = *1000
-    
+    if difficulty == "Easy":
+      if answer(question) == correct_answer:
+        coins *= 1200
+        lives += 2
+      if lives == 0: 
+        lives += 3
+        print("REVIVED!")
+  if pet_equip(pet_name) = "Immortal Skeletal Peagusus":
+    if difficulty == "Easy":
+      if answer(question) == correct_answer:
+        coins *= 1000
+        lives += 1
+      if lives == 0:
+        lives += 2
+        print("REVIVED!")
+  if pet_equip(pet_name) = "Voided Knight Unicorn":
+    if difficulty == "Easy":
+      if answer(question) == correct_answer:
+        coins *= 1000
+        lives += 2
+      if lives == 0:
+        lives += 2
+        print("REVIVED!")
 
 # Get user input
 name = input('What is your name?\n')
@@ -56,15 +69,15 @@ greet_user(name)
 # Quiz selection
 print(f"{name},lets do a fun quiz.")
 print("""Select your difficulty:
-[Easy = *1.5 coins]
-[Medium = *2 coins]
-[Hard = *3 coins]
-[Insane = *5 coins]
-[Improbable = *8 coins + 0.5% chance for jackpot]
-[Impossible = *10 coins + 1% chance for jackpot]
-[God = *15 coins + 7.5% chance for 1 secret tier or higher pet]
-[Demigod = *17.5 coins + 10% chance for 3 chronic tier or higher pet]
-[Universally ultragod = *25 coins + 15% chance for 5 multiversal tier or higher pet]""")
+[Easy *= 1.5 coins]
+[Medium *= 2 coins]
+[Hard *= 3 coins]
+[Insane *= 5 coins]
+[Improbable *= 8 coins + 0.5% chance for jackpot]
+[Impossible *= 10 coins + 1% chance for jackpot]
+[God *= 15 coins + 7.5% chance for 1 secret tier or higher pet]
+[Demigod *= 17.5 coins + 10% chance for 3 chronic tier or higher pet]
+[Universally ultragod *= 25 coins + 15% chance for 5 multiversal tier or higher pet]""")
 
 # Selected difficulty
 def selected_difficulty():
@@ -81,11 +94,12 @@ if difficulty == "Easy":
   start_time = time.time()
   
   # Get user input
-  user_input = answer(question)
-  answer(question) = input(f"{num1} + {num2}")
+  def answer():
+    user_input = answer(question)
+    answer(question) = input(f"{num1} + {num2}")
   end_time = time.time()
   time_taken = start_time - end_time
-  print("You took {time_taken} seconds!")
+  print(f"You took {time_taken} seconds!")
   if answer(question) == correct_answer:
     result = "Correct!"
     in_a_row += 1
@@ -97,7 +111,8 @@ if difficulty == "Easy":
     lives -= 1
     score += 0
     print(result)
-  raise ValueError:
+    try:
+ except ValueError:
     print("Please enter a number.")
     in_a_row = 0
     coins -= 10
@@ -105,11 +120,11 @@ if difficulty == "Easy":
     score += 0
   def in_a_row:
     if in_a_row >= 3:
-      Coins * 1.5
+      Coins *= 1.5
     if in_a_row >= 5:
-      Coins * 2
+      Coins *= 2
     else:
-      Coins * 1
+      Coins *= 1
 
 # Pets
 def pets():
@@ -146,12 +161,16 @@ if difficulty == "Easy":
   elif pets >= 999975:
     pets = "??"
     print("?? pet")
+    pet_name = random.randint(1, 4)
+    if pet_name == 1:
+      pet_name = "Crypto Historical UltraDog"
+      print("Crypto Historical UltraDog")
   elif pets >= 999950:
     pets = "?"
     print("? pet")
   elif pets >= 999900:
     pets = "Exclusive"
-    print("Exclusive pet)
+    print("Exclusive pet")
   elif pets >= 999700:
     pets = "Thunderous"
     print("Thunderous pet")
@@ -185,6 +204,15 @@ if difficulty == "Easy":
   elif pets >= 250000:
     pets = "Common"
     print("Common pet")
+    pet_name = random.randint(1, 6)
+    if pet_name == 1:
+      pet_name = "Normal Cat"
+      print("Normal Cat")
+      pet_storage("Normal Cat")
+    if pet_name == 2:
+      pet_name = "Normal Dog"
+      print("Normal Dog")
+      pet_storage("Normal Dog")
 
    
     
