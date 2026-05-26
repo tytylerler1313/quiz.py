@@ -25,20 +25,22 @@ def stats():
     print()
 
 # Rarities
-common_pet = ["Normal Cat", "Normal Dog", "Normal Ant", "Normal Hamster", "Normal Mole", "Normal Pidgeon"]
+pet_name = common_pet = ["Normal Cat", "Normal Dog", "Normal Ant", "Normal Hamster", "Normal Mole", "Normal Pidgeon"]
 
-uncommon_pet = ["Normal Duck", "Normal Elephant", "Normal Wolf", "Normal Giraffe", "Normal Goat", "Normal Dove", "Normal Deer"]
+pet_name = uncommon_pet = ["Normal Duck", "Normal Elephant", "Normal Wolf", "Normal Giraffe", "Normal Goat", "Normal Dove", "Normal Deer"]
 
-rare_pet = ["Radiated Buck", "Firey Otter", "Natural Grizzly", "Nocturnal Giraffe", "Normal Dodo", "Flying Fox", "Half Quarter Kitten"]
+pet_name = rare_pet = ["Radiated Buck", "Firey Otter", "Natural Grizzly", "Nocturnal Giraffe", "Normal Dodo", "Flying Fox", "Half Quarter Kitten"]
 
-epic_pet = ["Glacial Phoenix", "Scorching Ivory Mammoth", "Guardian Devil", "Terror MX-47", "Normal Vaquita"]
+pet_name = epic_pet = ["Glacial Phoenix", "Scorching Ivory Mammoth", "Guardian Devil", "Terror MX-47", "Normal Vaquita"]
 
-legendary_pet = ["Fouled Vaquita", "Erratic Pangolin", "Cyber GI-210 Electro Phoenix", "Matrix PD-391 Fox"]
+pet_name = legendary_pet = ["Fouled Vaquita", "Erratic Pangolin", "Cyber GI-210 Electro Phoenix", "Matrix PD-391 Fox"]
 
-futuristic_pet = []
+pet_name = futuristic_pet = ["Futuristic Vaquita", "Futuristic Woolly Mammoth", "Futuristic Hawk", "Futuristic Steampunk Monkey"]
 
+pet_name = secret_pet = ["Reincarnated Giga-Phoenix", "Cybernetic KD-35 Hawk", "Non-binary Coded Saber-toothed Cat"]
 
-
+pet_name = 
+                
 # Pets Storage and equip pets
 pet_inventory = []
 def pet_storage(pet_name):
@@ -49,7 +51,7 @@ def pet_equip(pet_name):
   global pet_equipped
   pet_equip = pet_name
   print(f"Successful equipped {pet_name}!")
-  if pet_equipped == "Tyty-lerler":
+  if pet_equipped == "Tyty-lerler_pet":
     if difficulty == "Easy":
       if int(input) == correct_answer:
         coins *= 1200
@@ -57,7 +59,8 @@ def pet_equip(pet_name):
       if lives == 0: 
         lives += 3
         print("REVIVED!")
-  if pet_equipped == "Immortal Skeletal Peagusus":
+        
+  if pet_equipped == "???_pet":
     if difficulty == "Easy":
       if int(input) == correct_answer:
         coins *= 1000
@@ -65,13 +68,14 @@ def pet_equip(pet_name):
       if lives == 0:
         lives += 2
         print("REVIVED!")
-  if pet_equipped == "Voided Knight Unicorn":
+        
+  if pet_equipped == "??_pet":
     if difficulty == "Easy":
-      if answer(question) == correct_answer:
-        coins *= 1000
-        lives += 2
+      if int(input) == correct_answer:
+        coins *= 750
+        lives += 1
       if lives == 0:
-        lives += 2
+        lives += 1
         print("REVIVED!")
 
 # Get user input
