@@ -33,6 +33,7 @@ common_pet = [
     "Normal Mole",
     "Normal Pidgeon"
  ]
+
 uncommon_pet = [
       "Normal Duck",
       "Normal Elephant",
@@ -42,6 +43,7 @@ uncommon_pet = [
       "Normal Dove",
       "Normal Deer"
  ]
+
 rare_pet = [
     "Radiated Buck",
     "Firey Otter",
@@ -61,7 +63,7 @@ rare_pet = [
 # Pets Storage and equip pets
 pet_inventory = []
 def pet_storage(pet_name):
-  pet_inventory.append(pet_name)
+  pet_storage = (pet_name)
   print(f"{pet_name} was added to your storage!")
 
 def pet_equip(pet_name):
@@ -124,7 +126,7 @@ def selected_difficulty():
 # Easy difficulty
 difficulty = selected_difficulty()
 if difficulty == "Easy":
-  while lives > 0:
+    while lives > 0:
     num1 = random.randint(0, 10)
     num2 = random.randint(0, 20)
     question = f"{num1} + {num2} ="
@@ -137,7 +139,7 @@ if difficulty == "Easy":
   end_time = time.time()
   time_taken = end_time - start_time
   print(f"You took {time_taken} seconds!")
-  if user_input == input(correct_answer):
+  if int(user_input) == correct_answer:
     result = "Correct!"
     in_a_row += 1
     print(result)
@@ -156,7 +158,7 @@ if difficulty == "Easy":
     coins -= 10
     lives -= 1
     score += 0
-  def in_a_row:
+  def streak_bonus():
     if in_a_row >= 3:
       coins *= 1.5
     if in_a_row >= 5:
