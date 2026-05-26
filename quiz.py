@@ -245,12 +245,12 @@ if difficulty == "Easy":
   elif pets >= 700000:
     pets = "Rare"
     print("Rare pet")
-    pet_name = random.choice["Radiated Buck"
-                             "Firey Otter"
-                             "Natural Grizzly"
-                             "Nocturnal Giraffe"
-                             "Normal Dodo"
-                             "Flying Fox"
+    pet_name = random.choice["Radiated Buck",
+                             "Firey Otter",
+                             "Natural Grizzly",
+                             "Nocturnal Giraffe",
+                             "Normal Dodo",
+                             "Flying Fox",
                              "Half Quarter Kitten"]
     return pet_name
     pet_storage(pet_name)
@@ -259,12 +259,12 @@ if difficulty == "Easy":
   elif pets >= 600000:
     pets = "Uncommon"
     print("Uncommon pet")
-    pet_name = random.choice["Normal Duck"
-                             "Normal Elephant"
-                             "Normal Wolf"
-                             "Normal Giraffe"
-                             "Normal Goat"
-                             "Normal Dove"
+    pet_name = random.choice["Normal Duck",
+                             "Normal Elephant",
+                             "Normal Wolf",
+                             "Normal Giraffe",
+                             "Normal Goat",
+                             "Normal Dove",
                              "Normal Deer"]
     return pet_name
     pet_storage(pet_name)
