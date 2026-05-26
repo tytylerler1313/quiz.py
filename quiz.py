@@ -95,8 +95,8 @@ if difficulty == "Easy":
   
   # Get user input
   def answer():
-    user_input = answer(question)
-    answer(question) = input(f"{num1} + {num2}")
+    user_input = input(question)
+    input(question) = input(f"{num1} + {num2}")
   end_time = time.time()
   time_taken = end_time - start_time
   print(f"You took {time_taken} seconds!")
