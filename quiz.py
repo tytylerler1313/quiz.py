@@ -25,38 +25,17 @@ def stats():
     print()
 
 # Rarities
-common_pet = [
-    "Normal Cat",
-    "Normal Dog" ,
-    "Normal Ant",
-    "Normal Hamster",
-    "Normal Mole",
-    "Normal Pidgeon"
- ]
+common_pet = ["Normal Cat", "Normal Dog", "Normal Ant", "Normal Hamster", "Normal Mole", "Normal Pidgeon"]
 
-uncommon_pet = [
-      "Normal Duck",
-      "Normal Elephant",
-      "Normal Wolf",
-      "Normal Giraffe",
-      "Normal Goat",
-      "Normal Dove",
-      "Normal Deer"
- ]
+uncommon_pet = ["Normal Duck", "Normal Elephant", "Normal Wolf", "Normal Giraffe", "Normal Goat", "Normal Dove", "Normal Deer"]
 
-rare_pet = [
-    "Radiated Buck",
-    "Firey Otter",
-    "Natural Grizzly",
-    "Nocturnal Giraffe",
-    "Normal Dodo",
-    "Flying Fox",
-    "Half Quarter Kitten"
- ]
+rare_pet = ["Radiated Buck", "Firey Otter", "Natural Grizzly", "Nocturnal Giraffe", "Normal Dodo", "Flying Fox", "Half Quarter Kitten"]
 
+epic_pet = ["Glacial Phoenix", "Scorching Ivory Mammoth", "Guardian Devil", "Terror MX-47", "Normal Vaquita"]
 
+legendary_pet = ["Fouled Vaquita", "Erratic Pangolin", "Cyber GI-210 Electro Phoenix", "Matrix PD-391 Fox"]
 
-
+improbable_pet = []
 
 
 
@@ -248,6 +227,8 @@ if difficulty == "Easy":
   elif pets >= 875000:
     pets = "Epic"
     print("Epic pet")
+    pet_name = random.choice(epic_pet)
+    pet_storage(pet_name)
   elif pets >= 700000:
     pets = "Rare"
     print("Rare pet")
