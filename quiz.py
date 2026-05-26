@@ -35,7 +35,7 @@ epic_pet = ["Glacial Phoenix", "Scorching Ivory Mammoth", "Guardian Devil", "Ter
 
 legendary_pet = ["Fouled Vaquita", "Erratic Pangolin", "Cyber GI-210 Electro Phoenix", "Matrix PD-391 Fox"]
 
-improbable_pet = []
+futuristic_pet = []
 
 
 
@@ -224,6 +224,8 @@ if difficulty == "Easy":
   elif pets >= 980000:
     pets = "Legendary"
     print("Legendary pet")
+    pet_name = random.choice(legendary_pet)
+    pet_storage(pet_name)
   elif pets >= 875000:
     pets = "Epic"
     print("Epic pet")
