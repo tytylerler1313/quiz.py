@@ -1,6 +1,12 @@
 ```python
 import random
 import time
+coins = 0
+lives = 3
+score = 0
+in_a_row = 0
+global coins
+global lives
 # Tyty-lerler quiz game and more
 print("Tyty-lerler presents")
 
@@ -9,12 +15,6 @@ print("Tyty-lerler presents")
 
 # Stats
 def stats():
-  coins = 0
-  lives = 3
-  score = 0
-  in_a_row = 0
-  global coins
-  global lives
   if lives == 0:
     print(GAME OVER!)
     exit()
@@ -89,11 +89,12 @@ def selected_difficulty():
 # Easy difficulty
 difficulty = selected_difficulty()
 if difficulty == "Easy":
-  num1 = random.randint(0, 10)
-  num2 = random.randint(0, 20)
-  question = f"{num1} + {num2} ="
-  correct_answer = num1 + num2
-  start_time = time.time()
+  while lives > 0:
+    num1 = random.randint(0, 10)
+    num2 = random.randint(0, 20)
+    question = f"{num1} + {num2} ="
+    correct_answer = num1 + num2
+    start_time = time.time()
   
   # Get user input
   def answer():
@@ -113,9 +114,9 @@ if difficulty == "Easy":
     lives -= 1
     score += 0
     print(result)
- try:
+  try:
      user_input = int(input(question))  
- except ValueError:
+  except ValueError:
     print("Please enter a number.")
     in_a_row = 0
     coins -= 10
@@ -141,7 +142,7 @@ if difficulty == "Easy":
     pets = "Tyty-lerler"
     pet_name = "Tyty-lerler"
     print("Tyty-lerler pet")
-    pets_storage("Tyty-lerler")
+    pet_storage("Tyty-lerler")
   elif pets == 999999:
     pets = "???"
     pet_name = random.randint(1, 4)
@@ -180,7 +181,7 @@ if difficulty == "Easy":
     if pet_name == 4:
       pet_name = "Teleporting Historical MegaFrog"
       print("Teleporting Historical MegaFrog")
-      pet_storage"Teleporting Historica MegaFrog")
+      pet_storage("Teleporting Historica MegaFrog")
   elif pets >= 999950:
     pets = "?"
     print("? pet")
