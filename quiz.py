@@ -111,7 +111,8 @@ if difficulty == "Easy":
     lives -= 1
     score += 0
     print(result)
-    try:
+ try:
+     user_input = int(input(question))  
  except ValueError:
     print("Please enter a number.")
     in_a_row = 0
@@ -120,11 +121,11 @@ if difficulty == "Easy":
     score += 0
   def in_a_row:
     if in_a_row >= 3:
-      Coins *= 1.5
+      coins *= 1.5
     if in_a_row >= 5:
-      Coins *= 2
+      coins *= 2
     else:
-      Coins *= 1
+      coins *= 1
 
 # Pets
 def pets():
@@ -145,19 +146,19 @@ if difficulty == "Easy":
     if pet_name == 1:
       pet_name = "Immortal Skeletal Peagusus"
       print("Immortal Skeletal Peagusus")
-      pets_storage("Immortal Skeletal Peagusus")
+      pet_storage("Immortal Skeletal Peagusus")
     if pet_name == 2:
       pet_name = "Voided Knighted Unicorn"
       print("Voided Knighted Unicorn")
-      pets_storage("Voided Knighted Unicorn")
+      pet_storage("Voided Knighted Unicorn")
     if pet_name == 3:
       pet_name = "Hurricane Buddha Raptor"
       print("Hurricane Buddha Raptor")
-      pets_storage("Hurricane Buddha Raptor")
+      pet_storage("Hurricane Buddha Raptor")
     if pet_name == 4:
       pet_name = "Crimson Awakened Semi-cat"
       print("Crimson Awakened Semi-cat")
-      pets_storage("Crimson Awaken Semi-cat")
+      pet_storage("Crimson Awaken Semi-cat")
   elif pets >= 999975:
     pets = "??"
     print("?? pet")
@@ -165,6 +166,19 @@ if difficulty == "Easy":
     if pet_name == 1:
       pet_name = "Crypto Historical UltraDog"
       print("Crypto Historical UltraDog")
+      pet_storage("Crypto Historical UltraDog")
+    if pet_name == 2:
+      pet_name = "Crypto Historical UltraCat"
+      print("Crypto Historical UltraCat")
+      pet_storage("Crypto Historical UltraCat")   
+    if pet_name == 3:
+      pet_name = "Bitcoin Historical UltraFox"
+      print("Bitcoin Historical UltraFox")
+      pet_storage("Bitcoin Historical UltraFox")    
+    if pet_name == 4:
+      pet_name = "Teleporting Historical MegaFrog"
+      print("Teleporting Historical MegaFrog")
+      pet_storage"Teleporting Historica MegaFrog")
   elif pets >= 999950:
     pets = "?"
     print("? pet")
