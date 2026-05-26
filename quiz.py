@@ -18,9 +18,9 @@ def stats():
   global lives
   if lives == 0: 
     print("GAME OVER!")
-    exit()
     print({coins}
           {score})
+    exit()
   else:
     print()
 
@@ -41,6 +41,7 @@ pet_name = secret_pet = ["Reincarnated Giga-Phoenix", "Cybernetic KD-35 Hawk", "
 
 pet_name = glitch_pet = ["Ultra Glitched Crow", "Dark Matter Horse", "Hacked Prototype MK-56 Teleporting Chicken", "Prototype MK-57 Fennec Fox"] 
 
+pet_name = ???_pet = ["Immortal Skeletal Peagusus", "Voided Knighted Unicorn", "Hurricane Buddha Raptor", "Crimson Awakened Semi-cat"]
 
 # Pets Storage and equip pets
 pet_inventory = []
@@ -111,19 +112,21 @@ def selected_difficulty():
 difficulty = selected_difficulty()
 if difficulty == "Easy":
     while lives > 0:
-    num1 = random.randint(0, 10)
-    num2 = random.randint(0, 20)
-    question = f"{num1} + {num2} ="
-    correct_answer = num1 + num2
-    start_time = time.time()
+      num1 = random.randint(0, 10)
+      num2 = random.randint(0, 20)
+      question = f"{num1} + {num2} ="
+      correct_answer = num1 + num2
+      start_time = time.time()
   
   # Get user input
     user_input = input(question)
-    input(question) = input(f"{num1} + {num2}")
   end_time = time.time()
   time_taken = end_time - start_time
   print(f"You took {time_taken} seconds!")
-  if int(user_input) == correct_answer:
+try:
+     user_input = int(input(question))
+  
+  if user_input == correct_answer:
     result = "Correct!"
     in_a_row += 1
     print(result)
@@ -134,18 +137,20 @@ if difficulty == "Easy":
     lives -= 1
     score += 0
     print(result)
-  try:
-     user_input = int(input(question))  
-  except ValueError:
+    
+except ValueError:
     print("Please enter a number.")
     in_a_row = 0
     coins -= 10
     lives -= 1
     score += 0
+
   def streak_bonus():
+    global coins
+    
     if in_a_row >= 3:
       coins *= 1.5
-    if in_a_row >= 5:
+    elif in_a_row >= 5:
       coins *= 2
     else:
       coins *= 1
@@ -165,77 +170,65 @@ if difficulty == "Easy":
     pet_storage("Tyty-lerler")
   elif pets == 999999:
     pets = "???"
-    pet_name = random.randint(1, 4)
-    if pet_name == 1:
-      pet_name = "Immortal Skeletal Peagusus"
-      print("Immortal Skeletal Peagusus")
-      pet_storage("Immortal Skeletal Peagusus")
-    if pet_name == 2:
-      pet_name = "Voided Knighted Unicorn"
-      print("Voided Knighted Unicorn")
-      pet_storage("Voided Knighted Unicorn")
-    if pet_name == 3:
-      pet_name = "Hurricane Buddha Raptor"
-      print("Hurricane Buddha Raptor")
-      pet_storage("Hurricane Buddha Raptor")
-    if pet_name == 4:
-      pet_name = "Crimson Awakened Semi-cat"
-      print("Crimson Awakened Semi-cat")
-      pet_storage("Crimson Awaken Semi-cat")
+    pet_name = random.choice(???_pet)
+    pet_storage(pet_name)
   elif pets >= 999975:
     pets = "??"
     print("?? pet")
-    pet_name = random.randint(1, 4)
-    if pet_name == 1:
-      pet_name = "Crypto Historical UltraDog"
-      print("Crypto Historical UltraDog")
-      pet_storage("Crypto Historical UltraDog")
-    if pet_name == 2:
-      pet_name = "Crypto Historical UltraCat"
-      print("Crypto Historical UltraCat")
-      pet_storage("Crypto Historical UltraCat")   
-    if pet_name == 3:
-      pet_name = "Bitcoin Historical UltraFox"
-      print("Bitcoin Historical UltraFox")
-      pet_storage("Bitcoin Historical UltraFox")    
-    if pet_name == 4:
-      pet_name = "Teleporting Historical MegaFrog"
-      print("Teleporting Historical MegaFrog")
-      pet_storage("Teleporting Historica MegaFrog")
+    pet_name = random.choice(??_pet)
+    pet_storage(pet_name)
   elif pets >= 999950:
     pets = "?"
     print("? pet")
+    pet_name = random.choice(?_pet)
+    pet_storage(pet_name)
   elif pets >= 999900:
     pets = "Exclusive"
     print("Exclusive pet")
+    pet_name = random.choice(exclusive_pet)
+    pet_storage(pet_name)
   elif pets >= 999700:
     pets = "Thunderous"
     print("Thunderous pet")
+    pet_name = random.choice(thunderous_pet)
+    pet_storage(pet_name)
   elif pets >= 999100:
     pets = "Multiversal"
     print("Multiversal pet")
+    pet_name = random.choice(multiversal_pet)
+    pet_storage(pet_name)
   elif pets >= 998750:
     pets = "Chronic"
     print("Chronic pet")
+    pet_name = random.choice(chronic_pet)
+    pet_storage(pet_name)
   elif pets >= 998000:
     pets = "Glitch"
     print("Glitch pet")
+    pet_name = random.choice(glitch_pet)
+    pet_storage(pet_name)
   elif pets >= 996000:
     pets = "Secret"
     print("Secret pet")
+    pet_name = random.choice(secret_pet)
+    pet_storage(pet_name)
   elif pets >= 993500:
     pets = "Futuristic"
     print("Futuristic pet")
+    pet_name = random.choice(futuristic_pet)
+    pet_storage(pet_name)
   elif pets >= 980000:
     pets = "Legendary"
     print("Legendary pet")
     pet_name = random.choice(legendary_pet)
     pet_storage(pet_name)
+    return pet_name
   elif pets >= 875000:
     pets = "Epic"
     print("Epic pet")
     pet_name = random.choice(epic_pet)
     pet_storage(pet_name)
+    return pet_name
   elif pets >= 700000:
     pets = "Rare"
     print("Rare pet")
