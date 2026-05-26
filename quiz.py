@@ -1,6 +1,7 @@
 ```python
 import random
 import time
+pet_equipped = None
 coins = 0
 lives = 3
 score = 0
@@ -24,7 +25,6 @@ def stats():
     print()
 
 # Rarities
-def rarity():
   common_pet = [
     "Normal Cat",
     "Normal Dog" ,
@@ -56,8 +56,7 @@ def rarity():
 
 
 
-
-
+pet_equip = None
 
 # Pets Storage and equip pets
 pet_inventory = []
@@ -66,9 +65,8 @@ def pet_storage(pet_name):
   print(f"{pet_name} was added to your storage!")
 
 def pet_equip(pet_name):
-  pet_equip = []
   pet_equip.append(pet_name)
-  print(f"Successful equipped {pet_name}{pets}!")
+  print(f"Successful equipped {pet_name}!")
   if pet_equipped == "Tyty-lerler":
     if difficulty == "Easy":
       if answer(question) == correct_answer:
@@ -133,13 +131,12 @@ if difficulty == "Easy":
     start_time = time.time()
   
   # Get user input
-  def answer():
     user_input = input(question)
     input(question) = input(f"{num1} + {num2}")
   end_time = time.time()
   time_taken = end_time - start_time
   print(f"You took {time_taken} seconds!")
-  if answer(question) == correct_answer:
+  if user_input == input(correct_answer):
     result = "Correct!"
     in_a_row += 1
     print(result)
@@ -254,8 +251,6 @@ if difficulty == "Easy":
     pet_name = random.choice(rare_pet)
     return pet_name
     pet_storage(pet_name)
-
-    
   elif pets >= 600000:
     pets = "Uncommon"
     print("Uncommon pet")
@@ -265,11 +260,7 @@ if difficulty == "Easy":
   elif pets >= 250000:
     pets = "Common"
     print("Common pet")
-    common_pet = random.choice(common_pet)
-                               
-                               
-                               
-                               
+    common_pet = random.choice(common_pet)                                                                                             
     return pet_name
     pet_storage(pet_name)
     
