@@ -25,26 +25,32 @@ def stats():
 
 # Rarities
 def rarity():
-  common_pet = ["Normal Cat"
-                "Normal Dog" 
-                "Normal Ant"
-                "Normal Hamster"
-                "Normal Mole"
-                "Normal Pidgeon"]
-  uncommon_pet = ["Normal Duck"
-                  "Normal Elephant"
-                  "Normal Wolf"
-                  "Normal Giraffe"
-                  "Normal Goat"
-                  "Normal Dove"
-                  "Normal Deer"]
-  rare_pet = ["Radiated Buck"
-              "Firey Otter"
-              "Natural Grizzly"
-              "Nocturnal Giraffe"
-              "Normal Dodo"
-              "Flying Fox"
-              "Half Quarter Kitten"]
+  common_pet = [
+    "Normal Cat",
+    "Normal Dog" ,
+    "Normal Ant",
+    "Normal Hamster",
+    "Normal Mole",
+    "Normal Pidgeon"
+ ]
+    uncommon_pet = [
+      "Normal Duck"
+      "Normal Elephant"
+      "Normal Wolf"
+      "Normal Giraffe"
+      "Normal Goat"
+      "Normal Dove"
+      "Normal Deer"
+ ]
+  rare_pet = [
+    "Radiated Buck"
+    "Firey Otter"
+    "Natural Grizzly"
+    "Nocturnal Giraffe"
+    "Normal Dodo"
+    "Flying Fox"
+    "Half Quarter Kitten"
+ ]
 
 
 
@@ -245,13 +251,7 @@ if difficulty == "Easy":
   elif pets >= 700000:
     pets = "Rare"
     print("Rare pet")
-    pet_name = random.choice["Radiated Buck",
-                             "Firey Otter",
-                             "Natural Grizzly",
-                             "Nocturnal Giraffe",
-                             "Normal Dodo",
-                             "Flying Fox",
-                             "Half Quarter Kitten"]
+    pet_name = random.choice(rare_pet)
     return pet_name
     pet_storage(pet_name)
 
@@ -259,24 +259,17 @@ if difficulty == "Easy":
   elif pets >= 600000:
     pets = "Uncommon"
     print("Uncommon pet")
-    pet_name = random.choice["Normal Duck",
-                             "Normal Elephant",
-                             "Normal Wolf",
-                             "Normal Giraffe",
-                             "Normal Goat",
-                             "Normal Dove",
-                             "Normal Deer"]
+    pet_name = random.choice(uncommon_pet)
     return pet_name
     pet_storage(pet_name)
   elif pets >= 250000:
     pets = "Common"
     print("Common pet")
-    common_pet = random.choice["Normal Cat",
-                               "Normal Dog",
-                               "Normal Ant",
-                               "Normal Hamster",
-                               "Normal Mole", 
-                               "Normal Pidgeon"]
+    common_pet = random.choice(common_pet)
+                               
+                               
+                               
+                               
     return pet_name
     pet_storage(pet_name)
     
