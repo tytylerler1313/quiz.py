@@ -13,6 +13,8 @@ def stats():
   lives = 3
   score = 0
   in_a_row = 0
+  global coins
+  global lives
   if lives == 0:
     print(GAME OVER!)
     exit()
