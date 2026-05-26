@@ -198,9 +198,67 @@ if difficulty == "Easy":
   elif pets >= 700000:
     pets = "Rare"
     print("Rare pet")
+    pet_name = random.randint(1, 7)
+    if pet_name == 1:
+      pet_name = "Radiated Buck"
+      print("Radiated Buck")
+      pet_storage("Radiated Buck")
+    if pet_name == 2:
+      pet_name = "Firey Otter"
+      print("Firey Otter")
+      pet_storage("Firey Otter")
+    if pet_name == 3:
+      pet_name = "Natural Grizzly"
+      print("Natural Grizzly")
+      pet_storage("Natural Grizzly")
+    if pet_name == 4:
+      pet_name = "Nocturnal Giraffe"
+      print("Nocturnal Giraffe")
+      pet_storage("Nocturnal Giraffe")
+    if pet_name == 5:
+      pet_name = "Normal Dodo"
+      print("Normal Dodo")
+      pet_storage("Normal Dodo")
+    if pet_name == 6:
+      pet_name = "Flying Fox "
+      print("Flying Fox")
+      pet_storage("Flying Fox")
+    if pet_name == 7:
+      pet_name = "Half Quarter-Kitten"
+      print("Half Quarter Kitten")
+      pet_storage("Half Quarter Kitten")
   elif pets >= 600000:
     pets = "Uncommon"
     print("Uncommon pet")
+    pet_name = random.randint(1, 7)
+    if pet_name == 1:
+      pet_name = "Normal Duck"
+      print("Normal Duck")
+      pet_storage("Normal Duck")
+    if pet_name == 2:
+      pet_name = "Normal Elephant"
+      print("Normal Elephant")
+      pet_storage("Normal Elephant")
+    if pet_name == 3:
+      pet_name = "Normal Wolf"
+      print("Normal Wolf")
+      pet_storage("Normal Wolf")
+    if pet_name == 4:
+      pet_name = "Normal Giraffe"
+      print("Normal Giraffe")
+      pet_storage("Normal Giraffe")
+    if pet_name == 5:
+      pet_name = "Normal Goat"
+      print("Normal Goat")
+      pet_storage("Normal Goat")
+    if pet_name == 6:
+      pet_name = "Normal Dove"
+      print("Normal Dove")
+      pet_storage("Normal Dove")
+    if pet_name == 7:
+      pet_name = "Normal Deer"
+      print("Normal Deer")
+      pet_storage("Normal Deer")
   elif pets >= 250000:
     pets = "Common"
     print("Common pet")
@@ -218,9 +276,17 @@ if difficulty == "Easy":
       print("Normal Ant")
       pet_storage("Normal Ant")
     if pet_name == 4:
-      pet_Name = "Normal Hamster"
+      pet_name = "Normal Hamster"
       print("Normal Hamster")
       pet_storage("Normal Hamster")
+    if pet_name == 5:
+      pet_name = "Normal Mole"
+      print("Normal Mole")
+      pet_storage("Normal Mole")
+    if pet_name == 6:
+      pet_name = "Normal Pidgeon"
+      print("Normal Pidgeon")
+      pet_storage("Normal Pidegon")
 
    
     
