@@ -29,7 +29,7 @@ def pet_storage(pet_name):
 
 def pet_equip(pet_name):
   pet_equip = []
-  pet_equip.append(pet_name)(pets)
+  pet_equip.append(pet_name)
   print(f"Successful equipped {pet_name}{pets}!")
   if pet_equipped = "Tyty-lerler":
     if difficulty == "Easy":
