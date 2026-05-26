@@ -70,7 +70,7 @@ def pet_equip(pet_name):
       if lives == 0:
         lives += 2
         print("REVIVED!")
-        
+
   if pet_equipped == "??_pet":
     if difficulty == "Easy":
       if int(input) == correct_answer:
@@ -79,6 +79,26 @@ def pet_equip(pet_name):
       if lives == 0:
         lives += 1
         print("REVIVED!")
+        
+  if pet_equipped == "?_pet":
+    if difficulty == "Easy":
+      if int(input) == correct_answer:
+        coins *= 700
+        
+  if pet_equipped == "exclusive_pet":
+    if difficulty == "Easy":
+      if int(input) == correct_answer:
+        coins *= 600
+
+  if pet_equipped == "thunderous_pet":
+    if difficulty == "Easy":
+      if int(input) == correct_answer:
+        coins *= 550
+
+  if pet_equipped == "multiversal_pet":
+    if difficulty == "Easy":
+      if int(input) == correct_answer:
+        coins *= 500
 
 # Get user input
 name = input('What is your name?\n')
