@@ -5,16 +5,16 @@ coins = 0
 lives = 3
 score = 0
 in_a_row = 0
-global coins
-global lives
 # Tyty-lerler quiz game and more
 print("Tyty-lerler presents")
 
 # Requirements:
--Python 3.7 or higher
+# Python 3.7 or higher
 
 # Stats
 def stats():
+  global coins
+  global lives
   if lives == 0:
     print(GAME OVER!)
     exit()
@@ -22,6 +22,18 @@ def stats():
           {score})
   else:
     print()
+
+# Rarities
+def rarity():
+  rarity(common) = ("Normal Cat", "Normal Dog", "Normal Ant", "Normal Hamster", "Normal Mole", "Normal Pidgeon") 
+  
+
+
+
+
+
+
+
 
 # Pets Storage and equip pets
 pet_inventory = []
@@ -33,7 +45,7 @@ def pet_equip(pet_name):
   pet_equip = []
   pet_equip.append(pet_name)
   print(f"Successful equipped {pet_name}{pets}!")
-  if pet_equipped = "Tyty-lerler":
+  if pet_equipped == "Tyty-lerler":
     if difficulty == "Easy":
       if answer(question) == correct_answer:
         coins *= 1200
@@ -41,7 +53,7 @@ def pet_equip(pet_name):
       if lives == 0: 
         lives += 3
         print("REVIVED!")
-  if pet_equipped = "Immortal Skeletal Peagusus":
+  if pet_equipped == "Immortal Skeletal Peagusus":
     if difficulty == "Easy":
       if answer(question) == correct_answer:
         coins *= 1000
@@ -49,7 +61,7 @@ def pet_equip(pet_name):
       if lives == 0:
         lives += 2
         print("REVIVED!")
-  if pet_equipped = "Voided Knight Unicorn":
+  if pet_equipped == "Voided Knight Unicorn":
     if difficulty == "Easy":
       if answer(question) == correct_answer:
         coins *= 1000
