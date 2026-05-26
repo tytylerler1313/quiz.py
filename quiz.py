@@ -13,13 +13,13 @@ def stats():
   lives = 3
   score = 0
   in_a_row = 0
-    if lives == 0:
-      print(GAME OVER!)
-      exit()
-      print({coins}
-            {score})
-    else:
-      print()
+  if lives == 0:
+    print(GAME OVER!)
+    exit()
+    print({coins}
+          {score})
+  else:
+    print()
 
 # Pets Storage and equip pets
 pet_storage = []
