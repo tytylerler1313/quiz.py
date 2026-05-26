@@ -98,7 +98,7 @@ if difficulty == "Easy":
     user_input = answer(question)
     answer(question) = input(f"{num1} + {num2}")
   end_time = time.time()
-  time_taken = start_time - end_time
+  time_taken = end_time - start_time
   print(f"You took {time_taken} seconds!")
   if answer(question) == correct_answer:
     result = "Correct!"
