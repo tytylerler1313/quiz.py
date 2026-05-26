@@ -32,11 +32,13 @@ def pet_equip(pet_name)
   pet_equip.append(pet_name)(pets)
   print(f"Successful equipped {pet_name}{pets}!")
   if pet_equip(pet_name) = "Tyty-lerler":
-   coins = *1200
-   lives += 2
-    if lives == 0: 
-     lives += 3
-     print("REVIVED!")
+   if difficulty == "Easy":
+     if answer(question) == correct_answer:
+       coins = *1200
+       lives += 2
+     if lives == 0: 
+       lives += 3
+       print("REVIVED!")
   if pet_equip(pet name) = "Immortal Skeletal Peagusus":
     coins = *1000
     
@@ -125,19 +127,19 @@ if difficulty == "Easy":
   elif pets == 999999:
     pets = "???"
     pet_name = random.randint(1, 4)
-    if pet_name = 1:
+    if pet_name == 1:
       pet_name = "Immortal Skeletal Peagusus"
       print("Immortal Skeletal Peagusus")
       pets_storage("Immortal Skeletal Peagusus")
-    if pet_name = 2:
+    if pet_name == 2:
       pet_name = "Voided Knighted Unicorn"
       print("Voided Knighted Unicorn")
       pets_storage("Voided Knighted Unicorn")
-    if pet_name = 3:
+    if pet_name == 3:
       pet_name = "Hurricane Buddha Raptor"
       print("Hurricane Buddha Raptor")
       pets_storage("Hurricane Buddha Raptor")
-    if pet_name = 4
+    if pet_name == 4:
       pet_name = "Crimson Awakened Semi-cat"
       print("Crimson Awakened Semi-cat")
       pets_storage("Crimson Awaken Semi-cat")
