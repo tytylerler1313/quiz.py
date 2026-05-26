@@ -39,8 +39,9 @@ pet_name = futuristic_pet = ["Futuristic Vaquita", "Futuristic Woolly Mammoth", 
 
 pet_name = secret_pet = ["Reincarnated Giga-Phoenix", "Cybernetic KD-35 Hawk", "Non-binary Coded Saber-toothed Cat"]
 
-pet_name = 
-                
+pet_name = glitch_pet = ["Ultra Glitched Crow", "Dark Matter Horse", "Hacked Prototype MK-56 Teleporting Chicken", "Prototype MK-57 Fennec Fox"] 
+
+
 # Pets Storage and equip pets
 pet_inventory = []
 def pet_storage(pet_name):
