@@ -51,7 +51,7 @@ def pet_equip(pet_name):
   print(f"Successful equipped {pet_name}!")
   if pet_equipped == "Tyty-lerler":
     if difficulty == "Easy":
-      if answer(question) == correct_answer:
+      if int(input) == correct_answer:
         coins *= 1200
         lives += 2
       if lives == 0: 
@@ -59,7 +59,7 @@ def pet_equip(pet_name):
         print("REVIVED!")
   if pet_equipped == "Immortal Skeletal Peagusus":
     if difficulty == "Easy":
-      if answer(question) == correct_answer:
+      if int(input) == correct_answer:
         coins *= 1000
         lives += 1
       if lives == 0:
