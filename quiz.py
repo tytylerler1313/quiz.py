@@ -25,7 +25,12 @@ def stats():
 
 # Rarities
 def rarity():
-  rarity(common) = ("Normal Cat", "Normal Dog", "Normal Ant", "Normal Hamster", "Normal Mole", "Normal Pidgeon") 
+  common_pet = ["Normal Cat"
+                "Normal Dog" 
+                "Normal Ant"
+                "Normal Hamster"
+                "Normal Mole"
+                "Normal Pidgeon"]
   
 
 
@@ -291,31 +296,14 @@ if difficulty == "Easy":
   elif pets >= 250000:
     pets = "Common"
     print("Common pet")
-    pet_name = random.randint(1, 6)
-    if pet_name == 1:
-      pet_name = "Normal Cat"
-      print("Normal Cat")
-      pet_storage("Normal Cat")
-    if pet_name == 2:
-      pet_name = "Normal Dog"
-      print("Normal Dog")
-      pet_storage("Normal Dog")
-    if pet_name == 3:
-      pet_name = "Normal Ant"
-      print("Normal Ant")
-      pet_storage("Normal Ant")
-    if pet_name == 4:
-      pet_name = "Normal Hamster"
-      print("Normal Hamster")
-      pet_storage("Normal Hamster")
-    if pet_name == 5:
-      pet_name = "Normal Mole"
-      print("Normal Mole")
-      pet_storage("Normal Mole")
-    if pet_name == 6:
-      pet_name = "Normal Pidgeon"
-      print("Normal Pidgeon")
-      pet_storage("Normal Pidegon")
+    common_pet = random.choice["Normal Cat",
+                               "Normal Dog",
+                               "Normal Ant",
+                               "Normal Hamster",
+                               "Normal Mole", 
+                               "Normal Pidgeon"]
+    return pet_name
+    
 
    
     
