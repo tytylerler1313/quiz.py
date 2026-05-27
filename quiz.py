@@ -46,11 +46,12 @@ pet_name = ???_pet = ["Immortal Skeletal Peagusus", "Voided Knighted Unicorn", "
 # Pets Storage and equip pets
 pet_inventory = []
 def pet_storage(pet_name):
-  pet_storage = (pet_name)
+  pet_storage.append(pet_name)
   print(f"{pet_name} was added to your storage!")
 
 def pet_equip(pet_name):
   global pet_equipped
+  
   pet_equip = pet_name
   print(f"Successful equipped {pet_name}!")
   if pet_equipped == "Tyty-lerler_pet":
