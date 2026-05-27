@@ -2,6 +2,8 @@
 import random
 import time
 pet_equipped = None
+xp = 0
+level = 1
 luck = 1
 coins = 0
 lives = 3
@@ -16,6 +18,7 @@ print("Tyty-lerler presents")
 # Stats
 def stats():
   global xp
+  global level
   global coins
   global lives
   global luck
@@ -54,12 +57,9 @@ def pet_storage(pet_name):
 
 def pet_equip(pet_name):
   global pet_equipped
-
-  pet_multipliers = {"common_pet": 1.5, "uncommon_pet": 3, "rare_pet": 10, "epic_pet": 50, "legendary_pet": 150, "futuristic_pet": 200, "secret_pet": 300, "glitch_pet": 350, "chronic_pet": 400, "multiversal_pet": 500, "thunderous_pet": 550, "exclusive_pet": 600, "very_secret_pet": 700, "super_secret_pet": 1000, "ultra_secret_pet": 1500, "Tyty-lerler_pet": 2500} 
-  
+  pet_multipliers = {"common_pet": 1.5, "uncommon_pet": 3, "rare_pet": 10, "epic_pet": 50, "legendary_pet": 150, "futuristic_pet": 200, "secret_pet": 300, "glitch_pet": 350, "chronic_pet": 400, "multiversal_pet": 500, "thunderous_pet": 550, "exclusive_pet": 600, "very_secret_pet": 700, "super_secret_pet": 1000, "ultra_secret_pet": 1500, "Tyty-lerler_pet": 2500}
   pet_equipped = pet_name
   print(f"Successful equipped {pet_name}!")
-
   pet_equipped = "Tyty-lerler_pet"
   rarity_stats = {"pet_multiplier": 2500, "revive": 3, "luck" = 50, "bonus_score": 2, "xp_multiplier": 25}  
 
@@ -160,12 +160,14 @@ except ValueError:
 
   def level():
     global xp
+    global level
+    global luck
     if xp >= 1000:
       level += 1
-    if level == 1:
       luck *= 1.1
       rarity_multiplier *= 1.01
       coins += 1000
+      print(f"Congrats! You are now level {level}!")
 
 # Pets
 def pets():
