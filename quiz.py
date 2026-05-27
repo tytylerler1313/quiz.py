@@ -41,12 +41,12 @@ pet_name = secret_pet = ["Reincarnated Giga-Phoenix", "Cybernetic KD-35 Hawk", "
 
 pet_name = glitch_pet = ["Ultra Glitched Crow", "Dark Matter Horse", "Hacked Prototype MK-56 Teleporting Chicken", "Prototype MK-57 Fennec Fox"] 
 
-pet_name = triple_secret_pet = ["Immortal Skeletal Peagusus", "Voided Knighted Unicorn", "Hurricane Buddha Raptor", "Crimson Awakened Semi-cat"]
+pet_name = ultra_secret_pet = ["Immortal Skeletal Peagusus", "Voided Knighted Unicorn", "Hurricane Buddha Raptor", "Crimson Awakened Semi-cat"]
 
 # Pets Storage and equip pets
 pet_inventory = []
 def pet_storage(pet_name):
-  pet_storage.append(pet_name)
+  pet_inventory.append(pet_name)
   print(f"{pet_name} was added to your storage!")
 
 def pet_equip(pet_name):
@@ -56,39 +56,39 @@ def pet_equip(pet_name):
   print(f"Successful equipped {pet_name}!")
   if pet_equipped == "Tyty-lerler_pet":
     if difficulty == "Easy":
-      if int(input) == correct_answer:
+      if user_input == correct_answer:
         coins *= 1200
         lives += 2
       if lives == 0: 
         lives += 3
         print("REVIVED!")
         
-  if pet_equipped == "???_pet":
+  if pet_equipped == "ultra_secret_pet":
     if difficulty == "Easy":
-      if int(input) == correct_answer:
+      if user_input == correct_answer:
         coins *= 1000
         lives += 1
       if lives == 0:
         lives += 2
         print("REVIVED!")
 
-  if pet_equipped == "double_secret_pet":
+  if pet_equipped == "super_secret_pet":
     if difficulty == "Easy":
-      if int(input) == correct_answer:
+      if user_input == correct_answer:
         coins *= 750
         lives += 1
       if lives == 0:
         lives += 1
         print("REVIVED!")
         
-  if pet_equipped == "mystery_pet":
+  if pet_equipped == "very_secret_pet":
     if difficulty == "Easy":
-      if int(input) == correct_answer:
+      if user_input == correct_answer:
         coins *= 700
         
   if pet_equipped == "exclusive_pet":
     if difficulty == "Easy":
-      if int(input) == correct_answer:
+      if user_input == correct_answer:
         coins *= 600
 
   if pet_equipped == "thunderous_pet":
@@ -141,7 +141,7 @@ def pet_equip(pet_name):
       if int(input) == correct_answer:
         coins *= 3
 
-  if pet_equipped == "multiversal_pet":
+  if pet_equipped == "common_pet":
     if difficulty == "Easy":
       if int(input) == correct_answer:
         coins *= 1.5
@@ -180,13 +180,17 @@ if difficulty == "Easy":
     while lives > 0:
       num1 = random.randint(0, 10)
       num2 = random.randint(0, 20)
+      
       question = f"{num1} + {num2} ="
       correct_answer = num1 + num2
+      
       start_time = time.time()
-  
+      
+      user_input = input(question)
+      
+      end_time = time.time()
+      
   # Get user input
-    user_input = input(question)
-  end_time = time.time()
   time_taken = end_time - start_time
   print(f"You took {time_taken} seconds!")
 try:
@@ -237,19 +241,19 @@ if difficulty == "Easy":
     return pet_name
   elif pets == 999999:
     pets = "???"
-    pet_name = random.choice(???_pet)
+    pet_name = random.choice(ultra_secret_pet)
     pet_storage(pet_name)
     return pet_name
   elif pets >= 999975:
     pets = "??"
     print("?? pet")
-    pet_name = random.choice(??_pet)
+    pet_name = random.choice(super_secret_pet)
     pet_storage(pet_name)
     return pet_name
   elif pets >= 999950:
     pets = "?"
     print("? pet")
-    pet_name = random.choice(?_pet)
+    pet_name = random.choice(ver_secret_pet)
     pet_storage(pet_name)
     return pet_name
   elif pets >= 999900:
