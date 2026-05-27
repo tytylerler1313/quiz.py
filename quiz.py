@@ -42,7 +42,7 @@ def stats():
 
 # Shop items
 
-shop_items = ["legendary_pet = 10000 coins"]
+shop = {"shop_item_1" = [""legendary_pet": 10000 coins"] "shop_item_2" = [""futuristic_pet": 50000 coins"]}
 
 # Rarities
 
@@ -62,15 +62,18 @@ legendary_pet = {"Fouled Vaquita", "Erratic Pangolin", "Cyber GI-210 Electro Pho
 
 "glitch_pet": {"pet_name": ["Ultra Glitched Crow", "Dark Matter Horse", "Hacked Prototype MK-56 Teleporting Chicken", "Prototype MK-57 Fennec Fox" "pet_multiplier": 350]}
 
-chronic_pet = {"Peagusus In Galaxy: Model v3.142 (P.I.G)", "Kyawthuite Mystic Dragon", "Kyanite Prototype OS-46 King Cobra", "Iridium Ore Mining Python" "pet_multiplier": 400}
+"chronic_pet": {"pet_name": ["Peagusus In Galaxy: Model v3.142 (P.I.G)", "Kyawthuite Mystic Dragon", "Kyanite Prototype OS-46 King Cobra", "Iridium Ore Mining Python" "pet_multiplier": 400]}
 
-ultra_secret_pet = {"Immortal Skeletal Peagusus", "Voided Knighted Unicorn", "Hurricane Buddha Raptor", "Crimson Awakened Semi-cat", "pet_multiplier": 1500}}
+"ultra_secret_pet": {"pet_name": ["Immortal Skeletal Peagusus", "Voided Knighted Unicorn", "Hurricane Buddha Raptor", "Crimson Awakened Semi-cat", "pet_multiplier": 1500]}
 
 # Shop
 shop = []
 def store(shop_items):
   if level >= 2:
-    shop.append(shop_items)
+    shop.append(shop_item_1)
+    print("Unlocked shop slot 1!")
+  if level >= 10:
+    shop.append(shop_item_2)
 
 # Pets Storage and equip pets
 pet_inventory = []
