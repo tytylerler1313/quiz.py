@@ -131,7 +131,6 @@ if difficulty == "Easy":
       
   # Get user input
 try:
-     user_input = int(input(question))
      time_taken = end_time - start_time
      print(f"You took {time_taken} seconds!")
   
