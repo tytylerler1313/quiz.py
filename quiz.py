@@ -2,6 +2,7 @@
 import random
 import time
 pet_equipped = None
+shop_items = None
 xp = 0
 level = 1
 luck = 1
