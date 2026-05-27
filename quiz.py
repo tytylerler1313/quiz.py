@@ -60,6 +60,8 @@ secret_pet = ["Reincarnated Giga-Phoenix", "Cybernetic KD-35 Hawk", "Non-binary 
 
 glitch_pet = ["Ultra Glitched Crow", "Dark Matter Horse", "Hacked Prototype MK-56 Teleporting Chicken", "Prototype MK-57 Fennec Fox"] 
 
+chronic_pet = ["Peagusus In Galaxy: Model v3.142 (P.I.G)", "Kyawthuite Mystic Dragon", "Kyanite Prototype OS-46 King Cobra", "Iridium Ore Mining Python"]
+
 ultra_secret_pet = ["Immortal Skeletal Peagusus", "Voided Knighted Unicorn", "Hurricane Buddha Raptor", "Crimson Awakened Semi-cat"]
 
 # Shop
