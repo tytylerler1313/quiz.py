@@ -121,10 +121,10 @@ if difficulty == "Easy":
       end_time = time.time()
       
   # Get user input
-  time_taken = end_time - start_time
-  print(f"You took {time_taken} seconds!")
 try:
      user_input = int(input(question))
+     time_taken = end_time - start_time
+     print(f"You took {time_taken} seconds!")
   
   if user_input == correct_answer:
     result = "Correct!"
