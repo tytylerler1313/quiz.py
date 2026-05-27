@@ -29,6 +29,7 @@ def stats():
   print(f"Coins: {coins}")
   print(f"Score: {score}") 
   print(f"Lives: {lives}") 
+  print(f"XP: {xp}")
   print(f"Level: {level}") 
   print(f"Luck: {luck}")
   if lives == 0: 
@@ -44,25 +45,26 @@ def stats():
 shop_items = ["legendary_pet = 10000 coins"]
 
 # Rarities
-common_pet = ["Normal Cat", "Normal Dog", "Normal Ant", "Normal Hamster", "Normal Mole", "Normal Pidgeon"]
 
-uncommon_pet = ["Normal Duck", "Normal Elephant", "Normal Wolf", "Normal Giraffe", "Normal Goat", "Normal Dove", "Normal Deer"]
+pets = {common_pet: {names: ["Normal Cat", "Normal Dog", "Normal Ant", "Normal Hamster", "Normal Mole", "Normal Pidgeon", "pet_multiplier": 1.5]} "uncommon_pet": {names: ["Normal Duck", "Normal Elephant", "Normal Wolf", "Normal Giraffe", "Normal Goat", "Normal Dove", "Normal Deer", "pet_multiplier": 3]} "rare_pet": {names:  ["Radiated Buck", "Firey Otter", "Natural Grizzly", "Nocturnal Giraffe", "Normal Dodo", "Flying Fox", "Half Quarter Kitten" "pet_multiplier": 10]} "epic_pet": {names: ["Glacial Phoenix", "Scorching Ivory Mammoth", "Guardian Devil", "Terror MX-47", "Normal Vaquita", "pet_multiplier": 50]} "legendary_pet": {names: ["Fouled Vaquita", "Erratic Pangolin", "Cyber GI-210 Electro Phoenix", "Matrix PD-391 Fox", "pet_multiplier": 150]} 
 
-rare_pet = ["Radiated Buck", "Firey Otter", "Natural Grizzly", "Nocturnal Giraffe", "Normal Dodo", "Flying Fox", "Half Quarter Kitten"]
+uncommon_pet = {"Normal Duck", "Normal Elephant", "Normal Wolf", "Normal Giraffe", "Normal Goat", "Normal Dove", "Normal Deer", "pet_multiplier": 3}
 
-epic_pet = ["Glacial Phoenix", "Scorching Ivory Mammoth", "Guardian Devil", "Terror MX-47", "Normal Vaquita"]
+rare_pet = {"Radiated Buck", "Firey Otter", "Natural Grizzly", "Nocturnal Giraffe", "Normal Dodo", "Flying Fox", "Half Quarter Kitten" "pet_multiplier": 10}
 
-legendary_pet = ["Fouled Vaquita", "Erratic Pangolin", "Cyber GI-210 Electro Phoenix", "Matrix PD-391 Fox"]
+epic_pet = {"Glacial Phoenix", "Scorching Ivory Mammoth", "Guardian Devil", "Terror MX-47", "Normal Vaquita", "pet_multiplier": 50}
 
-futuristic_pet = ["Futuristic Vaquita", "Futuristic Woolly Mammoth", "Futuristic Hawk", "Futuristic Steampunk Monkey"]
+legendary_pet = {"Fouled Vaquita", "Erratic Pangolin", "Cyber GI-210 Electro Phoenix", "Matrix PD-391 Fox", "pet_multiplier": 150}
 
-secret_pet = ["Reincarnated Giga-Phoenix", "Cybernetic KD-35 Hawk", "Non-binary Coded Saber-toothed Cat"]
+futuristic_pet = {"Futuristic Vaquita", "Futuristic Woolly Mammoth", "Futuristic Hawk", "Futuristic Steampunk Monkey", "pet_multiplier": 200}
 
-glitch_pet = ["Ultra Glitched Crow", "Dark Matter Horse", "Hacked Prototype MK-56 Teleporting Chicken", "Prototype MK-57 Fennec Fox"] 
+secret_pet = {"Reincarnated Giga-Phoenix", "Cybernetic KD-35 Hawk", "Non-binary Coded Saber-toothed Cat" "pet_multiplier": 300}
 
-chronic_pet = ["Peagusus In Galaxy: Model v3.142 (P.I.G)", "Kyawthuite Mystic Dragon", "Kyanite Prototype OS-46 King Cobra", "Iridium Ore Mining Python"]
+glitch_pet = {"Ultra Glitched Crow", "Dark Matter Horse", "Hacked Prototype MK-56 Teleporting Chicken", "Prototype MK-57 Fennec Fox" "pet_multiplier": 350}
 
-ultra_secret_pet = ["Immortal Skeletal Peagusus", "Voided Knighted Unicorn", "Hurricane Buddha Raptor", "Crimson Awakened Semi-cat"]
+chronic_pet = {"Peagusus In Galaxy: Model v3.142 (P.I.G)", "Kyawthuite Mystic Dragon", "Kyanite Prototype OS-46 King Cobra", "Iridium Ore Mining Python" "pet_multiplier": 400}
+
+ultra_secret_pet = {"Immortal Skeletal Peagusus", "Voided Knighted Unicorn", "Hurricane Buddha Raptor", "Crimson Awakened Semi-cat", "pet_multiplier": 1500}}
 
 # Shop
 shop = []
