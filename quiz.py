@@ -2,7 +2,7 @@
 import random
 import time
 pet_equipped = None
-luck *= 1
+luck = 1
 coins = 0
 lives = 3
 score = 0
@@ -61,7 +61,7 @@ def pet_equip(pet_name):
   print(f"Successful equipped {pet_name}!")
 
   pet_equipped = "Tyty-lerler_pet"
-  rarity_stats = {"pet_multiplier": 2500, "revive": 3, "luck" *= 50, "bonus_score": 2, "xp_multiplier": 25}  
+  rarity_stats = {"pet_multiplier": 2500, "revive": 3, "luck" = 50, "bonus_score": 2, "xp_multiplier": 25}  
 
         
 # Get user input
@@ -103,8 +103,8 @@ if difficulty == "Easy":
       correct_answer = num1 + num2
       
       start_time = time.time()
-      
-      user_input = input(question)
+
+      user_input = int(input(question))
       
       end_time = time.time()
       
@@ -160,9 +160,9 @@ except ValueError:
 
   def level():
     global xp
-    if xp >= 1000
+    if xp >= 1000:
       level += 1
-    if level = 1
+    if level == 1:
       luck *= 1.1
       rarity_multiplier *= 1.01
       coins += 1000
@@ -195,7 +195,7 @@ if difficulty == "Easy":
   elif pets >= 999950:
     pets = "?"
     print("? pet")
-    pet_name = random.choice(ver_secret_pet)
+    pet_name = random.choice(very_secret_pet)
     pet_storage(pet_name)
     return pet_name
   elif pets >= 999900:
