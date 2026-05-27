@@ -2,6 +2,7 @@
 import random
 import time
 pet_equipped = None
+luck *= 1
 coins = 0
 lives = 3
 score = 0
@@ -14,34 +15,36 @@ print("Tyty-lerler presents")
 
 # Stats
 def stats():
+  global xp
   global coins
   global lives
+  global luck
   if lives == 0: 
     print("GAME OVER!")
-    print({coins}
-          {score})
+    print(f"Coins: {coins}")
+    print(f"Score: {score}")
     exit()
   else:
     print()
 
 # Rarities
-pet_name = common_pet = ["Normal Cat", "Normal Dog", "Normal Ant", "Normal Hamster", "Normal Mole", "Normal Pidgeon"]
+common_pet = ["Normal Cat", "Normal Dog", "Normal Ant", "Normal Hamster", "Normal Mole", "Normal Pidgeon"]
 
-pet_name = uncommon_pet = ["Normal Duck", "Normal Elephant", "Normal Wolf", "Normal Giraffe", "Normal Goat", "Normal Dove", "Normal Deer"]
+uncommon_pet = ["Normal Duck", "Normal Elephant", "Normal Wolf", "Normal Giraffe", "Normal Goat", "Normal Dove", "Normal Deer"]
 
-pet_name = rare_pet = ["Radiated Buck", "Firey Otter", "Natural Grizzly", "Nocturnal Giraffe", "Normal Dodo", "Flying Fox", "Half Quarter Kitten"]
+rare_pet = ["Radiated Buck", "Firey Otter", "Natural Grizzly", "Nocturnal Giraffe", "Normal Dodo", "Flying Fox", "Half Quarter Kitten"]
 
-pet_name = epic_pet = ["Glacial Phoenix", "Scorching Ivory Mammoth", "Guardian Devil", "Terror MX-47", "Normal Vaquita"]
+epic_pet = ["Glacial Phoenix", "Scorching Ivory Mammoth", "Guardian Devil", "Terror MX-47", "Normal Vaquita"]
 
-pet_name = legendary_pet = ["Fouled Vaquita", "Erratic Pangolin", "Cyber GI-210 Electro Phoenix", "Matrix PD-391 Fox"]
+legendary_pet = ["Fouled Vaquita", "Erratic Pangolin", "Cyber GI-210 Electro Phoenix", "Matrix PD-391 Fox"]
 
-pet_name = futuristic_pet = ["Futuristic Vaquita", "Futuristic Woolly Mammoth", "Futuristic Hawk", "Futuristic Steampunk Monkey"]
+futuristic_pet = ["Futuristic Vaquita", "Futuristic Woolly Mammoth", "Futuristic Hawk", "Futuristic Steampunk Monkey"]
 
-pet_name = secret_pet = ["Reincarnated Giga-Phoenix", "Cybernetic KD-35 Hawk", "Non-binary Coded Saber-toothed Cat"]
+secret_pet = ["Reincarnated Giga-Phoenix", "Cybernetic KD-35 Hawk", "Non-binary Coded Saber-toothed Cat"]
 
-pet_name = glitch_pet = ["Ultra Glitched Crow", "Dark Matter Horse", "Hacked Prototype MK-56 Teleporting Chicken", "Prototype MK-57 Fennec Fox"] 
+glitch_pet = ["Ultra Glitched Crow", "Dark Matter Horse", "Hacked Prototype MK-56 Teleporting Chicken", "Prototype MK-57 Fennec Fox"] 
 
-pet_name = ultra_secret_pet = ["Immortal Skeletal Peagusus", "Voided Knighted Unicorn", "Hurricane Buddha Raptor", "Crimson Awakened Semi-cat"]
+ultra_secret_pet = ["Immortal Skeletal Peagusus", "Voided Knighted Unicorn", "Hurricane Buddha Raptor", "Crimson Awakened Semi-cat"]
 
 # Pets Storage and equip pets
 pet_inventory = []
@@ -51,100 +54,15 @@ def pet_storage(pet_name):
 
 def pet_equip(pet_name):
   global pet_equipped
+
+  pet_multipliers = {"common_pet": 1.5, "uncommon_pet": 3, "rare_pet": 10, "epic_pet": 50, "legendary_pet": 150, "futuristic_pet": 200, "secret_pet": 300, "glitch_pet": 350, "chronic_pet": 400, "multiversal_pet": 500, "thunderous_pet": 550, "exclusive_pet": 600, "very_secret_pet": 700, "super_secret_pet": 1000, "ultra_secret_pet": 1500, "Tyty-lerler_pet": 2500} 
   
-  pet_equip = pet_name
+  pet_equipped = pet_name
   print(f"Successful equipped {pet_name}!")
-  if pet_equipped == "Tyty-lerler_pet":
-    if difficulty == "Easy":
-      if user_input == correct_answer:
-        coins *= 1200
-        lives += 2
-      if lives == 0: 
-        lives += 3
-        print("REVIVED!")
-        
-  if pet_equipped == "ultra_secret_pet":
-    if difficulty == "Easy":
-      if user_input == correct_answer:
-        coins *= 1000
-        lives += 1
-      if lives == 0:
-        lives += 2
-        print("REVIVED!")
 
-  if pet_equipped == "super_secret_pet":
-    if difficulty == "Easy":
-      if user_input == correct_answer:
-        coins *= 750
-        lives += 1
-      if lives == 0:
-        lives += 1
-        print("REVIVED!")
-        
-  if pet_equipped == "very_secret_pet":
-    if difficulty == "Easy":
-      if user_input == correct_answer:
-        coins *= 700
-        
-  if pet_equipped == "exclusive_pet":
-    if difficulty == "Easy":
-      if user_input == correct_answer:
-        coins *= 600
+  pet_equipped = "Tyty-lerler_pet"
+  rarity_stats = {"pet_multiplier": 2500, "revive": 3, "luck" *= 50, "bonus_score": 2, "xp_multiplier": 25}  
 
-  if pet_equipped == "thunderous_pet":
-    if difficulty == "Easy":
-      if int(input) == correct_answer:
-        coins *= 550
-
-  if pet_equipped == "multiversal_pet":
-    if difficulty == "Easy":
-      if int(input) == correct_answer:
-        coins *= 500
-
-  if pet_equipped == "chronic_pet":
-    if difficulty == "Easy":
-      if int(input) == correct_answer:
-        coins *= 400
-
-  if pet_equipped == "glitch_pet":
-    if difficulty == "Easy":
-      if int(input) == correct_answer:
-        coins *= 350
-
-  if pet_equipped == "secret_pet":
-    if difficulty == "Easy":
-      if int(input) == correct_answer:
-        coins *= 300
-
-  if pet_equipped == "futuristic_pet":
-    if difficulty == "Easy":
-      if int(input) == correct_answer:
-        coins *= 200
-
-  if pet_equipped == "legendary_pet":
-    if difficulty == "Easy":
-      if int(input) == correct_answer:
-        coins *= 150
-
-  if pet_equipped == "epic_pet":
-    if difficulty == "Easy":
-      if int(input) == correct_answer:
-        coins *= 50
-
-  if pet_equipped == "rare_pet":
-    if difficulty == "Easy":
-      if int(input) == correct_answer:
-        coins *= 10
-
-  if pet_equipped == "uncommon_pet":
-    if difficulty == "Easy":
-      if int(input) == correct_answer:
-        coins *= 3
-
-  if pet_equipped == "common_pet":
-    if difficulty == "Easy":
-      if int(input) == correct_answer:
-        coins *= 1.5
         
 # Get user input
 name = input('What is your name?\n')
@@ -199,13 +117,18 @@ try:
   if user_input == correct_answer:
     result = "Correct!"
     in_a_row += 1
+    coins += 50
+    lives -= 0
+    score += 1
+    xp += 50
     print(result)
   else:
-    result = "Wrong! The answer was {correct_answer}."
+    result = f"Wrong! The answer was {correct_answer}."
     in_a_row = 0
     coins -= 10
     lives -= 1
     score += 0
+    xp += 0
     print(result)
     
 except ValueError:
@@ -214,16 +137,34 @@ except ValueError:
     coins -= 10
     lives -= 1
     score += 0
+    xp += 0
 
   def streak_bonus():
     global coins
-    
+    global xp
+
+    if user_input = correct_answer:
+      streak_bonus() += 1
+    else:
+      streak_bonus = 0
+      
     if in_a_row >= 3:
       coins *= 1.5
+      xp *= 1.5
     elif in_a_row >= 5:
       coins *= 2
+      xp *= 1.5
     else:
       coins *= 1
+
+  def level():
+    global xp
+    if xp >= 1000
+      level += 1
+    if level = 1
+      luck *= 1.1
+      rarity_multiplier *= 1.01
+      coins += 1000
 
 # Pets
 def pets():
