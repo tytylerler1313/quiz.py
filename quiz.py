@@ -4,6 +4,7 @@ import time
 pet_equipped = None
 shop_items = None
 xp = 0
+rarity_multiplier = 1
 level = 1
 luck = 1
 coins = 0
@@ -56,9 +57,9 @@ ultra_secret_pet = ["Immortal Skeletal Peagusus", "Voided Knighted Unicorn", "Hu
 
 # Shop
 shop = []
-def store(shop items):
+def store(shop_items):
   if level >= 2:
-    shop.append(shop items)
+    shop.append(shop_items)
 
 # Pets Storage and equip pets
 pet_inventory = []
@@ -71,8 +72,8 @@ def pet_equip(pet_name):
   pet_multipliers = {"common_pet": 1.5, "uncommon_pet": 3, "rare_pet": 10, "epic_pet": 50, "legendary_pet": 150, "futuristic_pet": 200, "secret_pet": 300, "glitch_pet": 350, "chronic_pet": 400, "multiversal_pet": 500, "thunderous_pet": 550, "exclusive_pet": 600, "very_secret_pet": 700, "super_secret_pet": 1000, "ultra_secret_pet": 1500, "Tyty-lerler_pet": 2500}
   pet_equipped = pet_name
   print(f"Successful equipped {pet_name}!")
-  pet_equipped = "Tyty-lerler_pet"
-  rarity_stats = {"pet_multiplier": 2500, "revive": 3, "luck" : 50, "bonus_score": 2, "xp_multiplier": 25}  
+  if pet_equipped = "Tyty-lerler_pet"
+    rarity_stats = {"pet_multiplier": 2500, "revive": 3, "luck" : 50, "bonus_score": 2, "xp_multiplier": 25}  
 
         
 # Get user input
@@ -157,11 +158,8 @@ except ValueError:
     global luck
     
     if user_input == correct_answer:
-      in_a_row += 1
-    else:
-      in_a_row = 0
-      
-    elif in_a_row >= 10
+      in_a_row += 1          
+    elif in_a_row >= 10:
       coins *= 5
       xp *= 5
       luck *= 5
@@ -175,6 +173,8 @@ except ValueError:
       luck *= 1.5
     else:
       coins *= 1
+      xp *= 1
+      luck *= 1
 
   def level():
     global xp
