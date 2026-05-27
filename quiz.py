@@ -30,6 +30,10 @@ def stats():
   else:
     print()
 
+# Shop items
+
+shop_items = ["legendary_pet = 10000 coins"]
+
 # Rarities
 common_pet = ["Normal Cat", "Normal Dog", "Normal Ant", "Normal Hamster", "Normal Mole", "Normal Pidgeon"]
 
@@ -49,6 +53,12 @@ glitch_pet = ["Ultra Glitched Crow", "Dark Matter Horse", "Hacked Prototype MK-5
 
 ultra_secret_pet = ["Immortal Skeletal Peagusus", "Voided Knighted Unicorn", "Hurricane Buddha Raptor", "Crimson Awakened Semi-cat"]
 
+# Shop
+shop = []
+def store(shop items):
+  if level >= 2:
+    shop.append(shop items)
+
 # Pets Storage and equip pets
 pet_inventory = []
 def pet_storage(pet_name):
@@ -61,7 +71,7 @@ def pet_equip(pet_name):
   pet_equipped = pet_name
   print(f"Successful equipped {pet_name}!")
   pet_equipped = "Tyty-lerler_pet"
-  rarity_stats = {"pet_multiplier": 2500, "revive": 3, "luck" = 50, "bonus_score": 2, "xp_multiplier": 25}  
+  rarity_stats = {"pet_multiplier": 2500, "revive": 3, "luck" : 50, "bonus_score": 2, "xp_multiplier": 25}  
 
         
 # Get user input
@@ -142,19 +152,26 @@ except ValueError:
   def streak_bonus():
     global coins
     global xp
-
-    if user_input = correct_answer:
-      streak_bonus()+= 1
+    global in_a_row
+    global luck
+    
+    if user_input == correct_answer:
       in_a_row += 1
     else:
-      streak_bonus = 0
+      in_a_row = 0
       
+    elif in_a_row >= 10
+      coins *= 5
+      xp *= 5
+      luck *= 5
+    elif in_a_row >= 5:
+      coins *= 2
+      xp *= 2
+      luck *= 2
     if in_a_row >= 3:
       coins *= 1.5
       xp *= 1.5
-    elif in_a_row >= 5:
-      coins *= 2
-      xp *= 1.5
+      luck *= 1.5
     else:
       coins *= 1
 
