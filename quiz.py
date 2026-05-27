@@ -3,6 +3,7 @@ import random
 import time
 pet_equipped = None
 shop_items = None
+multiplier = 1
 xp = 0
 rarity_multiplier = 1
 level = 1
@@ -19,11 +20,15 @@ print("Tyty-lerler presents")
 
 # Stats
 def stats():
+  global multiplier
   global xp
   global level
   global coins
   global lives
   global luck
+  xp *= stats(multiplier)
+  luck *= stats(multiplier)
+  coins *= stats(multiplier)
   if lives == 0: 
     print("GAME OVER!")
     print(f"Coins: {coins}")
@@ -72,7 +77,7 @@ def pet_equip(pet_name):
   pet_multipliers = {"common_pet": 1.5, "uncommon_pet": 3, "rare_pet": 10, "epic_pet": 50, "legendary_pet": 150, "futuristic_pet": 200, "secret_pet": 300, "glitch_pet": 350, "chronic_pet": 400, "multiversal_pet": 500, "thunderous_pet": 550, "exclusive_pet": 600, "very_secret_pet": 700, "super_secret_pet": 1000, "ultra_secret_pet": 1500, "Tyty-lerler_pet": 2500}
   pet_equipped = pet_name
   print(f"Successful equipped {pet_name}!")
-  if pet_equipped = "Tyty-lerler_pet"
+  if pet_equipped == "Tyty-lerler_pet":
     rarity_stats = {"pet_multiplier": 2500, "revive": 3, "luck" : 50, "bonus_score": 2, "xp_multiplier": 25}  
 
         
@@ -107,18 +112,18 @@ def selected_difficulty():
 # Easy difficulty
 difficulty = selected_difficulty()
 if difficulty == "Easy":
-    while lives > 0:
-      num1 = random.randint(0, 10)
-      num2 = random.randint(0, 20)
+  while lives > 0:
+    num1 = random.randint(0, 10)
+    num2 = random.randint(0, 20)
       
-      question = f"{num1} + {num2} ="
-      correct_answer = num1 + num2
+    question = f"{num1} + {num2} ="
+    correct_answer = num1 + num2
       
-      start_time = time.time()
+    start_time = time.time()
 
-      user_input = int(input(question))
+    user_input = int(input(question))
       
-      end_time = time.time()
+    end_time = time.time()
       
   # Get user input
 try:
@@ -126,22 +131,22 @@ try:
      time_taken = end_time - start_time
      print(f"You took {time_taken} seconds!")
   
-  if user_input == correct_answer:
-    result = "Correct!"
-    in_a_row += 1
-    coins += 50
-    lives -= 0
-    score += 1
-    xp += 50
-    print(result)
-  else:
-    result = f"Wrong! The answer was {correct_answer}."
-    in_a_row = 0
-    coins -= 10
-    lives -= 1
-    score += 0
-    xp += 0
-    print(result)
+    if user_input == correct_answer:
+      result = "Correct!"
+      in_a_row += 1
+      coins += 50
+      lives -= 0
+      score += 1
+      xp += 50
+      print(result)
+    else:
+      result = f"Wrong! The answer was {correct_answer}."
+      in_a_row = 0
+      coins -= 10
+      lives -= 1
+      score += 0
+      xp += 0
+      print(result)
     
 except ValueError:
     print("Please enter a number.")
@@ -158,25 +163,28 @@ except ValueError:
     global luck
     
     if user_input == correct_answer:
-      in_a_row += 1          
-    elif in_a_row >= 10:
+      in_a_row += 1
+    else:
+      in_a_row = 0
+      coins *= 1
+      xp *= 1
+      luck *= 1
+      
+    if in_a_row >= 10:
       coins *= 5
       xp *= 5
-      luck *= 5
+      luck *= 5   
     elif in_a_row >= 5:
       coins *= 2
       xp *= 2
       luck *= 2
-    if in_a_row >= 3:
+    elif in_a_row >= 3:
       coins *= 1.5
       xp *= 1.5
       luck *= 1.5
-    else:
-      coins *= 1
-      xp *= 1
-      luck *= 1
 
   def level():
+    global rarity_multiplier
     global xp
     global level
     global luck
