@@ -41,7 +41,7 @@ pet_name = secret_pet = ["Reincarnated Giga-Phoenix", "Cybernetic KD-35 Hawk", "
 
 pet_name = glitch_pet = ["Ultra Glitched Crow", "Dark Matter Horse", "Hacked Prototype MK-56 Teleporting Chicken", "Prototype MK-57 Fennec Fox"] 
 
-pet_name = ???_pet = ["Immortal Skeletal Peagusus", "Voided Knighted Unicorn", "Hurricane Buddha Raptor", "Crimson Awakened Semi-cat"]
+pet_name = triple_secret_pet = ["Immortal Skeletal Peagusus", "Voided Knighted Unicorn", "Hurricane Buddha Raptor", "Crimson Awakened Semi-cat"]
 
 # Pets Storage and equip pets
 pet_inventory = []
@@ -72,7 +72,7 @@ def pet_equip(pet_name):
         lives += 2
         print("REVIVED!")
 
-  if pet_equipped == "??_pet":
+  if pet_equipped == "double_secret_pet":
     if difficulty == "Easy":
       if int(input) == correct_answer:
         coins *= 750
@@ -81,7 +81,7 @@ def pet_equip(pet_name):
         lives += 1
         print("REVIVED!")
         
-  if pet_equipped == "?_pet":
+  if pet_equipped == "mystery_pet":
     if difficulty == "Easy":
       if int(input) == correct_answer:
         coins *= 700
