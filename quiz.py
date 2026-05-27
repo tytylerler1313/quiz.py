@@ -144,7 +144,8 @@ except ValueError:
     global xp
 
     if user_input = correct_answer:
-      streak_bonus() += 1
+      streak_bonus()+= 1
+      in_a_row += 1
     else:
       streak_bonus = 0
       
