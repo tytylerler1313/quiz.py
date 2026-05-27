@@ -26,9 +26,11 @@ def stats():
   global coins
   global lives
   global luck
-  xp *= stats(multiplier)
-  luck *= stats(multiplier)
-  coins *= stats(multiplier)
+  print(f"Coins: {coins}")
+  print(f"Score: {score}") 
+  print(f"Lives: {lives}") 
+  print(f"Level: {level}") 
+  print(f"Luck: {luck}")
   if lives == 0: 
     print("GAME OVER!")
     print(f"Coins: {coins}")
