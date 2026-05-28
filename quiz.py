@@ -3,6 +3,7 @@ import random
 import time
 item_used = None
 pet_equipped = None
+potion_used = None
 shop_items = None
 multiplier = 1
 xp = 0
@@ -63,7 +64,7 @@ pets = {"common_pet": {"pet_name": ["Normal Cat", "Normal Dog", "Normal Ant", "N
 
 # Potions
 
-potions = {
+potions = {"luck_potion": {"potion_name"
 # Shop
 shop = []
 items = []
