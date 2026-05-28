@@ -42,27 +42,19 @@ def stats():
 
 # Shop items
 
-shop = {"shop_item_1" = ["'legendary_pet': 10000 coins"] "shop_item_2" = ["'futuristic_pet': 50000 coins"]}
+shop = {"shop_item_1": {"shop_item_name": ["legendary_pet: 10000 coins"]}, "shop_item_2": {"shop_item_name": ["futuristic_pet: 50000 coins"]}}
 
 # Rarities
 
-pets = {"common_pet": {"pet_name": ["Normal Cat", "Normal Dog", "Normal Ant", "Normal Hamster", "Normal Mole", "Normal Pidgeon", "pet_multiplier": 1.5]} "uncommon_pet": {"pet_name": ["Normal Duck", "Normal Elephant", "Normal Wolf", "Normal Giraffe", "Normal Goat", "Normal Dove", "Normal Deer", "pet_multiplier": 3]} "rare_pet": {"pet_name":  ["Radiated Buck", "Firey Otter", "Natural Grizzly", "Nocturnal Giraffe", "Normal Dodo", "Flying Fox", "Half Quarter Kitten" "pet_multiplier": 10]} "epic_pet": {"pet_name": ["Glacial Phoenix", "Scorching Ivory Mammoth", "Guardian Devil", "Terror MX-47", "Normal Vaquita", "pet_multiplier": 50]} "legendary_pet": {"pet_name": ["Fouled Vaquita", "Erratic Pangolin", "Cyber GI-210 Electro Phoenix", "Matrix PD-391 Fox", "pet_multiplier": 150]} "futuristic_pet": {"pet_name": ["Futuristic Vaquita", "Futuristic Woolly Mammoth", "Futuristic Hawk", "Futuristic Steampunk Monkey", "pet_multiplier": 200]} 
+pets = {"common_pet": {"pet_name": ["Normal Cat", "Normal Dog", "Normal Ant", "Normal Hamster", "Normal Mole", "Normal Pidgeon", "pet_multiplier": 1.5]} "uncommon_pet": {"pet_name": ["Normal Duck", "Normal Elephant", "Normal Wolf", "Normal Giraffe", "Normal Goat", "Normal Dove", "Normal Deer", "pet_multiplier": 3]} "rare_pet": {"pet_name":  ["Radiated Buck", "Firey Otter", "Natural Grizzly", "Nocturnal Giraffe", "Normal Dodo", "Flying Fox", "Half Quarter Kitten" "pet_multiplier": 10]} "epic_pet": {"pet_name": ["Glacial Phoenix", "Scorching Ivory Mammoth", "Guardian Devil", "Terror MX-47", "Normal Vaquita", "pet_multiplier": 50]} "legendary_pet": {"pet_name": ["Fouled Vaquita", "Erratic Pangolin", "Cyber GI-210 Electro Phoenix", "Matrix PD-391 Fox", "pet_multiplier": 150]} "futuristic_pet": {"pet_name": ["Futuristic Vaquita", "Futuristic Woolly Mammoth", "Futuristic Hawk", "Futuristic Steampunk Monkey", "pet_multiplier": 200]} "secret_pet": {pet_name: "Reincarnated Giga-Phoenix", "Cybernetic KD-35 Hawk", "Non-binary Coded Saber-toothed Cat" "pet_multiplier": 300} "glitch_pet": {"pet_name": ["Ultra Glitched Crow", "Dark Matter Horse", "Hacked Prototype MK-56 Teleporting Chicken", "Prototype MK-57 Fennec Fox" "pet_multiplier": 350]} "chronic_pet": {"pet_name": ["Peagusus In Galaxy: Model v3.142 (P.I.G)", "Kyawthuite Mystic Dragon", "Kyanite Prototype OS-46 King Cobra", "Iridium Ore Mining Python" "pet_multiplier": 400]} 
 
-uncommon_pet = {"Normal Duck", "Normal Elephant", "Normal Wolf", "Normal Giraffe", "Normal Goat", "Normal Dove", "Normal Deer", "pet_multiplier": 3}
+"multiversal_pet": {"pet_name": ["Peasgusus Prototype PX-12 (Module Overclocking)", "
 
-rare_pet = {"Radiated Buck", "Firey Otter", "Natural Grizzly", "Nocturnal Giraffe", "Normal Dodo", "Flying Fox", "Half Quarter Kitten" "pet_multiplier": 10}
 
-epic_pet = {"Glacial Phoenix", "Scorching Ivory Mammoth", "Guardian Devil", "Terror MX-47", "Normal Vaquita", "pet_multiplier": 50}
 
-legendary_pet = {"Fouled Vaquita", "Erratic Pangolin", "Cyber GI-210 Electro Phoenix", "Matrix PD-391 Fox", "pet_multiplier": 150}
 
-"futuristic_pet": {name: ["Futuristic Vaquita", "Futuristic Woolly Mammoth", "Futuristic Hawk", "Futuristic Steampunk Monkey", "pet_multiplier": 200}]
 
-"secret_pet": {pet_name: "Reincarnated Giga-Phoenix", "Cybernetic KD-35 Hawk", "Non-binary Coded Saber-toothed Cat" "pet_multiplier": 300}
 
-"glitch_pet": {"pet_name": ["Ultra Glitched Crow", "Dark Matter Horse", "Hacked Prototype MK-56 Teleporting Chicken", "Prototype MK-57 Fennec Fox" "pet_multiplier": 350]}
-
-"chronic_pet": {"pet_name": ["Peagusus In Galaxy: Model v3.142 (P.I.G)", "Kyawthuite Mystic Dragon", "Kyanite Prototype OS-46 King Cobra", "Iridium Ore Mining Python" "pet_multiplier": 400]}
 
 "ultra_secret_pet": {"pet_name": ["Immortal Skeletal Peagusus", "Voided Knighted Unicorn", "Hurricane Buddha Raptor", "Crimson Awakened Semi-cat", "pet_multiplier": 1500]}
 
@@ -71,9 +63,12 @@ shop = []
 def store(shop_items):
   if level >= 2:
     shop.append(shop_item_1)
+    shop_item_1 = "legendary_pet"
     print("Unlocked shop slot 1!")
   if level >= 10:
     shop.append(shop_item_2)
+    shop_item_2 = "futuristic_pet"
+    print("Unlocked shop slot 2!")
 
 # Pets Storage and equip pets
 pet_inventory = []
