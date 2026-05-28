@@ -52,7 +52,7 @@ shop = {"shop_item_1": {"shop_item_name": ["legendary_pet: "coins": 10000"]}, "s
 
 pets = {"common_pet": {"pet_name": ["Normal Cat", "Normal Dog", "Normal Ant", "Normal Hamster", "Normal Mole", "Normal Pidgeon", "pet_multiplier": 1.5]} "uncommon_pet": {"pet_name": ["Normal Duck", "Normal Elephant", "Normal Wolf", "Normal Giraffe", "Normal Goat", "Normal Dove", "Normal Deer", "pet_multiplier": 3]} "rare_pet": {"pet_name":  ["Radiated Buck", "Firey Otter", "Natural Grizzly", "Nocturnal Giraffe", "Normal Dodo", "Flying Fox", "Half Quarter Kitten" "pet_multiplier": 10]} "epic_pet": {"pet_name": ["Glacial Phoenix", "Scorching Ivory Mammoth", "Guardian Devil", "Terror MX-47", "Normal Vaquita", "pet_multiplier": 50]} "legendary_pet": {"pet_name": ["Fouled Vaquita", "Erratic Pangolin", "Cyber GI-210 Electro Phoenix", "Matrix PD-391 Fox", "pet_multiplier": 150]} "futuristic_pet": {"pet_name": ["Futuristic Vaquita", "Futuristic Woolly Mammoth", "Futuristic Hawk", "Futuristic Steampunk Monkey", "pet_multiplier": 200]} "secret_pet": {pet_name: "Reincarnated Giga-Phoenix", "Cybernetic KD-35 Hawk", "Non-binary Coded Saber-toothed Cat" "pet_multiplier": 300} "glitch_pet": {"pet_name": ["Ultra Glitched Crow", "Dark Matter Horse", "Hacked Prototype MK-56 Teleporting Chicken", "Prototype MK-57 Fennec Fox" "pet_multiplier": 350]} "chronic_pet": {"pet_name": ["Peagusus In Galaxy: Model v3.142 (P.I.G)", "Kyawthuite Mystic Dragon", "Kyanite Prototype OS-46 King Cobra", "Iridium Ore Mining Python" "pet_multiplier": 400]} 
 
-"multiversal_pet": {"pet_name": ["Peasgusus Prototype PX-12 (Module Overclocking)", "
+"multiversal_pet": {"pet_name": ["Peagusus Prototype PX-12 (Module Overclocking)", "Los Angeles UltraUniverse
 
 
         
