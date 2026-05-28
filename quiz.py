@@ -46,7 +46,7 @@ def stats():
 
 # Shop items
 
-shop = {"shop_item_1": {"shop_item_name": ["legendary_pet: "coins": 10000"]}, "shop_item_2": {"shop_item_name": ["futuristic_pet: "coins": 50000"]}, "shop_item_3": {"luck_potion": "coins": 100000}
+shop = {"shop_item_1": {"shop_item_name": ["legendary_pet: "coins": 10000"]}, "shop_item_2": {"shop_item_name": ["futuristic_pet: "coins": 50000"]}, "shop_item_3": {"luck_potion_1": "coins": 100000}
 
 # Rarities
 
@@ -68,7 +68,8 @@ pets = {"common_pet": {"pet_name": ["Normal Cat", "Normal Dog", "Normal Ant", "N
 
 if luck_potion_multiplier += 1:
   luck *= 1
-potions = {"luck_potion_1": {"potion_name": ["Luck Potion I", "luck_potion_multiplier": 1.5] ["Luck Potion II", "luck_potion_multiplier": 3.5] ["Luck Potion III", "luck_potion_multiplier": 6.5] ["Luck potion IV", "luck_potion_multiplier": 10] ["Luck Potion V"]}}
+potions = {"luck_potion_1": {"potion_name": ["Luck Potion I", "luck_potion_multiplier": 1.5]}} {"luck_potion_2": {"potion_name": ["Luck Potion II", "luck_potion_multiplier": 3.5]}} {"luck_potion_3": {"potion_name": ["Luck Potion III", "luck_potion_multiplier": 6.5]}} {"luck_potion_4": {"potion_name": ["Luck potion IV", "luck_potion_multiplier": 10]}} {"luck_potion_5": {"potion_name": ["Luck Potion V", "luck_potion_multiplier": 25]}}
+
 # Shop
 shop = []
 items = []
