@@ -42,7 +42,7 @@ def stats():
 
 # Shop items
 
-shop = {"shop_item_1" = [""legendary_pet": 10000 coins"] "shop_item_2" = [""futuristic_pet": 50000 coins"]}
+shop = {"shop_item_1" = ["'legendary_pet': 10000 coins"] "shop_item_2" = ["'futuristic_pet': 50000 coins"]}
 
 # Rarities
 
