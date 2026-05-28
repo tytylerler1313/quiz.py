@@ -65,10 +65,9 @@ pets = {"common_pet": {"pet_name": ["Normal Cat", "Normal Dog", "Normal Ant", "N
 "ultra_secret_pet": {"pet_name": ["Immortal Skeletal Peagusus", "Voided Knighted Unicorn", "Hurricane Buddha Raptor", "Crimson Awakened Semi-cat", "pet_multiplier": 1500]}
 
 # Potions
-
 if luck_potion_multiplier += 1:
-  luck *= 1
-potions = {"luck_potion_1": {"potion_name": ["Luck Potion I", "luck_potion_multiplier": 1.5]}} {"luck_potion_2": {"potion_name": ["Luck Potion II", "luck_potion_multiplier": 3.5]}} {"luck_potion_3": {"potion_name": ["Luck Potion III", "luck_potion_multiplier": 6.5]}} {"luck_potion_4": {"potion_name": ["Luck potion IV", "luck_potion_multiplier": 10]}} {"luck_potion_5": {"potion_name": ["Luck Potion V", "luck_potion_multiplier": 25]}}
+  luck *= 2
+luck_potions = {"luck_potion_1": {"potion_name": ["Luck Potion I", "luck_potion_multiplier": 1.5]}} {"luck_potion_2": {"potion_name": ["Luck Potion II", "luck_potion_multiplier": 3.5]}} {"luck_potion_3": {"potion_name": ["Luck Potion III", "luck_potion_multiplier": 6.5]}} {"luck_potion_4": {"potion_name": ["Luck potion IV", "luck_potion_multiplier": 10]}} {"luck_potion_5": {"potion_name": ["Luck Potion V", "luck_potion_multiplier": 25]}}
 
 # Shop
 shop = []
@@ -100,7 +99,7 @@ def pet_storage(pet_name):
 def pet_equip(pet_name):
   global pet_equipped
   if coin_multiplier += 1:
-    coins *= 1 
+    coins *= 2 
   coin_multiplier = {"common_pet": 1.5, "uncommon_pet": 3, "rare_pet": 10, "epic_pet": 50, "legendary_pet": 150, "futuristic_pet": 200, "secret_pet": 300, "glitch_pet": 350, "chronic_pet": 400, "multiversal_pet": 500, "thunderous_pet": 550, "exclusive_pet": 600, "very_secret_pet": 700, "super_secret_pet": 1000, "ultra_secret_pet": 1500, "Tyty-lerler_pet": 2500}
   pet_equipped = pet_name
   print(f"Successful equipped {pet_name}!")
@@ -109,8 +108,17 @@ def pet_equip(pet_name):
 
 def use_potion(potion_name):
   global potion_used
-  potion_multipliers = {"luck_potion
-        
+  if potion_used == luck_potion_1:
+    luck_potion_multiplier = 1.5
+  if potion_used == luck_potion_2:
+    luck_potion_multiplier = 3.5
+  if potion_used == luck_potion_3:
+    luck_potion_multiplier = 6.5
+  if potion_used == luck_potion_4:
+    luck_potion_multiplier = 10
+  if potion_used == luck_potion_5:
+    luck_potion_multiplier = 25
+    
 # Get user input
 name = input('What is your name?\n')
 
