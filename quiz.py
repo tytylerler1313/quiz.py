@@ -42,7 +42,7 @@ def stats():
 
 # Shop items
 
-shop = {"shop_item_1": {"shop_item_name": ["legendary_pet: 10000 coins"]}, "shop_item_2": {"shop_item_name": ["futuristic_pet: 50000 coins"]}}
+shop = {"shop_item_1": {"shop_item_name": ["legendary_pet: "coins": 10000"]}, "shop_item_2": {"shop_item_name": ["futuristic_pet: "coins": 50000"]}}
 
 # Rarities
 
@@ -62,26 +62,20 @@ pets = {"common_pet": {"pet_name": ["Normal Cat", "Normal Dog", "Normal Ant", "N
 shop = []
 items = []
 def store(shop_items):
-  shop_item_1 = 10000_coins
-  item_bought -= 10000_coins
-  shop_item_2 = 50000_coins
-  item_bought -= 50000_coins
+  shop_item_name = {coins} coins
+  item_bought -= {coins} coins
   if level >= 2:
     shop.append(shop_item_1)
     shop_item_1 = "shop_item_name"
     print("Unlocked shop slot 1!")
-    if shop_item_1 == item_bought:
-      items.append(shop_item_name)
-      print(f"Successfully bought {shop_item_name}!")
-    else:
-      print()
   if level >= 10:
     shop.append(shop_item_2)
     shop_item_2 = "shop_item_name"
     print("Unlocked shop slot 2!")
-    if shop_item_2 == item_bought:
-      items.append(shop_item_name)
-      print(f"Successfully bought {shop_item_name}!")
+  if shop_item_name == item_bought:
+    items.append(shop_item_name)
+    shop_item_name -= {coins} coins
+    print(f"Successfully bought {shop_item_name}!")
   else:
     print()
   
