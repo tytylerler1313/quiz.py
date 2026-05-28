@@ -1,6 +1,7 @@
 ```python
 import random
 import time
+item_used = None
 pet_equipped = None
 shop_items = None
 multiplier = 1
@@ -42,7 +43,7 @@ def stats():
 
 # Shop items
 
-shop = {"shop_item_1": {"shop_item_name": ["legendary_pet: "coins": 10000"]}, "shop_item_2": {"shop_item_name": ["futuristic_pet: "coins": 50000"]}}
+shop = {"shop_item_1": {"shop_item_name": ["legendary_pet: "coins": 10000"]}, "shop_item_2": {"shop_item_name": ["futuristic_pet: "coins": 50000"]}, "shop_item_3": {"luck_potion": "coins": 100000}
 
 # Rarities
 
@@ -51,6 +52,8 @@ pets = {"common_pet": {"pet_name": ["Normal Cat", "Normal Dog", "Normal Ant", "N
 "multiversal_pet": {"pet_name": ["Peasgusus Prototype PX-12 (Module Overclocking)", "
 
 
+        
+
 
 
 
@@ -58,6 +61,9 @@ pets = {"common_pet": {"pet_name": ["Normal Cat", "Normal Dog", "Normal Ant", "N
 
 "ultra_secret_pet": {"pet_name": ["Immortal Skeletal Peagusus", "Voided Knighted Unicorn", "Hurricane Buddha Raptor", "Crimson Awakened Semi-cat", "pet_multiplier": 1500]}
 
+# Potions
+
+potions = {
 # Shop
 shop = []
 items = []
