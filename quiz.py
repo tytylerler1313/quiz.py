@@ -60,16 +60,31 @@ pets = {"common_pet": {"pet_name": ["Normal Cat", "Normal Dog", "Normal Ant", "N
 
 # Shop
 shop = []
+items = []
 def store(shop_items):
+  shop_item_1 = 10000_coins
+  item_bought -= 10000_coins
+  shop_item_2 = 50000_coins
+  item_bought -= 50000_coins
   if level >= 2:
     shop.append(shop_item_1)
-    shop_item_1 = "legendary_pet"
+    shop_item_1 = "shop_item_name"
     print("Unlocked shop slot 1!")
+    if shop_item_1 == item_bought:
+      items.append(shop_item_name)
+      print(f"Successfully bought {shop_item_name}!")
+    else:
+      print()
   if level >= 10:
     shop.append(shop_item_2)
-    shop_item_2 = "futuristic_pet"
+    shop_item_2 = "shop_item_name"
     print("Unlocked shop slot 2!")
-
+    if shop_item_2 == item_bought:
+      items.append(shop_item_name)
+      print(f"Successfully bought {shop_item_name}!")
+  else:
+    print()
+  
 # Pets Storage and equip pets
 pet_inventory = []
 def pet_storage(pet_name):
