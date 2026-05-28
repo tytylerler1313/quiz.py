@@ -6,7 +6,7 @@ pet_equipped = None
 potion_used = None
 shop_items = None
 luck_potion_multiplier = 1
-pet_multiplier = 1
+coin_multiplier = 1
 multiplier = 1
 xp = 0
 rarity_multiplier = 1
@@ -96,12 +96,12 @@ def pet_storage(pet_name):
 
 def pet_equip(pet_name):
   global pet_equipped
-  coin_multipliers = coins 
-  coin_multipliers = {"common_pet": 1.5, "uncommon_pet": 3, "rare_pet": 10, "epic_pet": 50, "legendary_pet": 150, "futuristic_pet": 200, "secret_pet": 300, "glitch_pet": 350, "chronic_pet": 400, "multiversal_pet": 500, "thunderous_pet": 550, "exclusive_pet": 600, "very_secret_pet": 700, "super_secret_pet": 1000, "ultra_secret_pet": 1500, "Tyty-lerler_pet": 2500}
+  coin_multiplier = coins 
+  coin_multiplier = {"common_pet": 1.5, "uncommon_pet": 3, "rare_pet": 10, "epic_pet": 50, "legendary_pet": 150, "futuristic_pet": 200, "secret_pet": 300, "glitch_pet": 350, "chronic_pet": 400, "multiversal_pet": 500, "thunderous_pet": 550, "exclusive_pet": 600, "very_secret_pet": 700, "super_secret_pet": 1000, "ultra_secret_pet": 1500, "Tyty-lerler_pet": 2500}
   pet_equipped = pet_name
   print(f"Successful equipped {pet_name}!")
   if pet_equipped == "Tyty-lerler_pet":
-    rarity_stats = {"pet_multiplier": 2500, "revive": 3, "luck" : 50, "bonus_score": 2, "xp_multiplier": 25}  
+    rarity_stats = {"coin_multiplier": 2500, "revive": 3, "luck" : 50, "bonus_score": 2, "xp_multiplier": 25}  
 
 def use_potion(potion_name):
   global potion_used
