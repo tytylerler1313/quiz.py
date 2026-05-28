@@ -1,12 +1,13 @@
 ```python
 import random
 import time
+shop = []
+items = []
+pet_inventory = []
 item_used = None
 pet_equipped = None
 potion_used = None
 shop_items = None
-luck_potion_multiplier = 1
-coin_multiplier = 1
 multiplier = 1
 xp = 0
 rarity_multiplier = 1
@@ -45,12 +46,10 @@ def stats():
     print()
 
 # Shop items
-
 shop = {"shop_item_1": {"shop_item_name": ["legendary_pet: "coins": 10000"]}, "shop_item_2": {"shop_item_name": ["futuristic_pet: "coins": 50000"]}, "shop_item_3": {"luck_potion_1": "coins": 100000}
 
 # Rarities
-
-pets = {"common_pet": {"pet_name": ["Normal Cat", "Normal Dog", "Normal Ant", "Normal Hamster", "Normal Mole", "Normal Pidgeon", "pet_multiplier": 1.5]} "uncommon_pet": {"pet_name": ["Normal Duck", "Normal Elephant", "Normal Wolf", "Normal Giraffe", "Normal Goat", "Normal Dove", "Normal Deer", "pet_multiplier": 3]} "rare_pet": {"pet_name":  ["Radiated Buck", "Firey Otter", "Natural Grizzly", "Nocturnal Giraffe", "Normal Dodo", "Flying Fox", "Half Quarter Kitten" "pet_multiplier": 10]} "epic_pet": {"pet_name": ["Glacial Phoenix", "Scorching Ivory Mammoth", "Guardian Devil", "Terror MX-47", "Normal Vaquita", "pet_multiplier": 50]} "legendary_pet": {"pet_name": ["Fouled Vaquita", "Erratic Pangolin", "Cyber GI-210 Electro Phoenix", "Matrix PD-391 Fox", "pet_multiplier": 150]} "futuristic_pet": {"pet_name": ["Futuristic Vaquita", "Futuristic Woolly Mammoth", "Futuristic Hawk", "Futuristic Steampunk Monkey", "pet_multiplier": 200]} "secret_pet": {pet_name: "Reincarnated Giga-Phoenix", "Cybernetic KD-35 Hawk", "Non-binary Coded Saber-toothed Cat" "pet_multiplier": 300} "glitch_pet": {"pet_name": ["Ultra Glitched Crow", "Dark Matter Horse", "Hacked Prototype MK-56 Teleporting Chicken", "Prototype MK-57 Fennec Fox" "pet_multiplier": 350]} "chronic_pet": {"pet_name": ["Peagusus In Galaxy: Model v3.142 (P.I.G)", "Kyawthuite Mystic Dragon", "Kyanite Prototype OS-46 King Cobra", "Iridium Ore Mining Python" "pet_multiplier": 400]} "multiversal_pet": {"pet_name": ["Peagusus Prototype PX-12 (Module Overclocking)", "Los Angeles UltraUniverse Popcorn Chicken", "UnThermal AutoFreezer Seel"]}  
+pets = {"common_pet": {"pet_name": ["Normal Cat", "Normal Dog", "Normal Ant", "Normal Hamster", "Normal Mole", "Normal Pidgeon"] "pet_multiplier": 1.5} "uncommon_pet": {"pet_name": ["Normal Duck", "Normal Elephant", "Normal Wolf", "Normal Giraffe", "Normal Goat", "Normal Dove", "Normal Deer"] "pet_multiplier": 3} "rare_pet": {"pet_name":  ["Radiated Buck", "Firey Otter", "Natural Grizzly", "Nocturnal Giraffe", "Normal Dodo", "Flying Fox", "Half Quarter Kitten"] "pet_multiplier": 10} "epic_pet": {"pet_name": ["Glacial Phoenix", "Scorching Ivory Mammoth", "Guardian Devil", "Terror MX-47", "Normal Vaquita"] "pet_multiplier": 50} "legendary_pet": {"pet_name": ["Fouled Vaquita", "Erratic Pangolin", "Cyber GI-210 Electro Phoenix", "Matrix PD-391 Fox"] "pet_multiplier": 150} "futuristic_pet": {"pet_name": ["Futuristic Vaquita", "Futuristic Woolly Mammoth", "Futuristic Hawk", "Futuristic Steampunk Monkey"] "pet_multiplier": 200} "secret_pet": {pet_name: ["Reincarnated Giga-Phoenix", "Cybernetic KD-35 Hawk", "Non-binary Coded Saber-toothed Cat"] "pet_multiplier": 300} "glitch_pet": {"pet_name": ["Ultra Glitched Crow", "Dark Matter Horse", "Hacked Prototype MK-56 Teleporting Chicken", "Prototype MK-57 Fennec Fox"] "pet_multiplier": 350} "chronic_pet": {"pet_name": ["Peagusus In Galaxy: Model v3.142 (P.I.G)", "Kyawthuite Mystic Dragon", "Kyanite Prototype OS-46 King Cobra", "Iridium Ore Mining Python"] "pet_multiplier": 400} "multiversal_pet": {"pet_name": ["Peagusus Prototype PX-12 (Module Overclocking)", "Los Angeles UltraUniverse Popcorn Chicken", "UnThermal AutoFreezer Seel"] "pet_multiplier": 500}  
 
 "multiversal_pet": {"pet_name": ["Peagusus Prototype PX-12 (Module Overclocking)", "Los Angeles UltraUniverse Popcorn Chicken", "UnThermal AutoFreezer Seel"]
 
@@ -65,13 +64,9 @@ pets = {"common_pet": {"pet_name": ["Normal Cat", "Normal Dog", "Normal Ant", "N
 "ultra_secret_pet": {"pet_name": ["Immortal Skeletal Peagusus", "Voided Knighted Unicorn", "Hurricane Buddha Raptor", "Crimson Awakened Semi-cat", "pet_multiplier": 1500]}
 
 # Potions
-if luck_potion_multiplier += 1:
-  luck *= 2
-luck_potions = {"luck_potion_1": {"potion_name": ["Luck Potion I", "luck_potion_multiplier": 1.5]}} {"luck_potion_2": {"potion_name": ["Luck Potion II", "luck_potion_multiplier": 3.5]}} {"luck_potion_3": {"potion_name": ["Luck Potion III", "luck_potion_multiplier": 6.5]}} {"luck_potion_4": {"potion_name": ["Luck potion IV", "luck_potion_multiplier": 10]}} {"luck_potion_5": {"potion_name": ["Luck Potion V", "luck_potion_multiplier": 25]}}
+luck_potions = {"luck_potion_1": {"potion_name": ["Luck Potion I"] "luck": 1.5}} {"luck_potion_2": {"potion_name": ["Luck Potion II"] "luck": 3.5}} {"luck_potion_3": {"potion_name": ["Luck Potion III"] "luck": 6.5}} {"luck_potion_4": {"potion_name": ["Luck potion IV"] "luck": 10}} {"luck_potion_5": {"potion_name": ["Luck Potion V"] "luck": 25}}
 
 # Shop
-shop = []
-items = []
 def store(shop_items):
   shop_item_name = {coins} coins
   item_bought -= {coins} coins
@@ -91,7 +86,6 @@ def store(shop_items):
     print()
   
 # Pets Storage and equip pets
-pet_inventory = []
 def pet_storage(pet_name):
   pet_inventory.append(pet_name)
   print(f"{pet_name} was added to your storage!")
@@ -104,20 +98,20 @@ def pet_equip(pet_name):
   pet_equipped = pet_name
   print(f"Successful equipped {pet_name}!")
   if pet_equipped == "Tyty-lerler_pet":
-    rarity_stats = {"coin_multiplier": 2500, "revive": 3, "luck" : 50, "bonus_score": 2, "xp_multiplier": 25}  
+    rarity_stats = {"coin_multiplier": 2500, "revive": 3, "luck": 50, "bonus_score": 2, "xp_multiplier": 25}  
 
 def use_potion(potion_name):
   global potion_used
   if potion_used == luck_potion_1:
-    luck_potion_multiplier = 1.5
+    luck *= 1.5
   if potion_used == luck_potion_2:
-    luck_potion_multiplier = 3.5
+    luck *= 3.5
   if potion_used == luck_potion_3:
-    luck_potion_multiplier = 6.5
+    luck *= 6.5
   if potion_used == luck_potion_4:
-    luck_potion_multiplier = 10
+    luck *= 10
   if potion_used == luck_potion_5:
-    luck_potion_multiplier = 25
+    luck *= 25
     
 # Get user input
 name = input('What is your name?\n')
