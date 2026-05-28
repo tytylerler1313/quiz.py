@@ -66,7 +66,9 @@ pets = {"common_pet": {"pet_name": ["Normal Cat", "Normal Dog", "Normal Ant", "N
 
 # Potions
 
-potions = {"luck_potion_1": {"potion_name": ["Luck Potion I", "luck_potion_multiplier": 1.5] ["Luck Potion II", "Luck Potion III", "Luck potion IV", "Luck Potion V"]}}
+if luck_potion_multiplier += 1:
+  luck *= 1
+potions = {"luck_potion_1": {"potion_name": ["Luck Potion I", "luck_potion_multiplier": 1.5] ["Luck Potion II", "luck_potion_multiplier": 3.5] ["Luck Potion III", "luck_potion_multiplier": 6.5] ["Luck potion IV", "luck_potion_multiplier": 10] ["Luck Potion V"]}}
 # Shop
 shop = []
 items = []
@@ -96,7 +98,8 @@ def pet_storage(pet_name):
 
 def pet_equip(pet_name):
   global pet_equipped
-  coin_multiplier = coins 
+  if coin_multiplier += 1:
+    coins *= 1 
   coin_multiplier = {"common_pet": 1.5, "uncommon_pet": 3, "rare_pet": 10, "epic_pet": 50, "legendary_pet": 150, "futuristic_pet": 200, "secret_pet": 300, "glitch_pet": 350, "chronic_pet": 400, "multiversal_pet": 500, "thunderous_pet": 550, "exclusive_pet": 600, "very_secret_pet": 700, "super_secret_pet": 1000, "ultra_secret_pet": 1500, "Tyty-lerler_pet": 2500}
   pet_equipped = pet_name
   print(f"Successful equipped {pet_name}!")
